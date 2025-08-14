@@ -1,0 +1,42 @@
+import "./../../styles/Header.css";
+
+export default function Header() {
+    return (
+        <header className="header">
+            <div className="header-logo">
+                <img
+                    className="header-logo-picture"
+                    src="/images/LogoTiare.png"
+                    alt="Logo Tiaré Assist'"
+                />
+            </div>
+            <h1 className="header-title">Bienvenue chez Tiaré Assist'</h1>
+            <p className="header-presentation">
+                Après 20 ans dans l’administration et l’informatique, dont 11 en
+                télétravail, j’ai choisi l’autoentrepreneuriat pour allier ma
+                vie personnelle et professionnelle. Je vous propose mes services
+                en présentiel ou en télétravail, mais toujours avec autant de
+                rigueur et de professionnalisme.
+            </p>
+            <nav className="header-nav">
+                <ul className="nav-list">
+                    <li className="list-item">
+                        <a className="item-link" href="/">
+                            Accueil
+                        </a>
+                    </li>
+                    <li className="list-item">
+                        <a className="item-link" href="/services">
+                            Services
+                        </a>
+                    </li>
+                    <li className="list-item">
+                        <a className="item-link" href="/contact">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    );
+}

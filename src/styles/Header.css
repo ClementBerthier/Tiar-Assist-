@@ -1,0 +1,79 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(#c1d373, #f5d8b2);
+    .header-logo {
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        max-width: 30rem;
+
+        .logo-picture {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+    .header-title {
+        z-index: 1;
+        font-size: 4.5rem;
+        font-weight: 500;
+        color: #333;
+        margin: 1rem 1rem;
+        text-align: center;
+        font-family: "Dancing Script", sans-serif;
+    }
+    .header-presentation {
+        z-index: 1;
+        font-size: 1.2rem;
+        color: #000000;
+        text-align: center;
+        max-width: 50rem;
+        margin: 1rem 1rem;
+        text-align: center;
+    }
+    .header-nav {
+        z-index: 1;
+
+        .nav-list {
+            box-shadow: 0 0.5rem 1rem rgba(38, 94, 66, 0.52);
+            background-color: #265e42;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            list-style: none;
+            padding: 1rem 0rem;
+            margin: 2rem 2rem 0 2rem;
+            border-radius: 30px;
+            .list-item {
+                font-size: 1.2rem;
+                color: white;
+                text-decoration: none;
+                margin: 0 1.5rem;
+                .item-link {
+                    color: white;
+                    text-decoration: none;
+                    &:hover {
+                        text-decoration: underline;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        .header-title {
+            font-size: 2.5rem;
+        }
+        .header-nav {
+            display: none;
+        }
+    }
+}
