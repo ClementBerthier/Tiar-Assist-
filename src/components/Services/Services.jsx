@@ -7,7 +7,6 @@ export default function Services() {
         {
             formula: "Formule Frangipanier",
             note: " (sur mesure)",
-            flower: "Frangipanier",
             price: "50€/h*",
             screenreader: "50 euros de l'heure",
             picture: "/images/FleurFrangipanier.png",
@@ -17,7 +16,6 @@ export default function Services() {
         {
             formula: "Formule Hibiscus",
             note: "",
-            flower: "Hibiscus",
             price: "400€/semaine*",
             screenreader: "400 euros par semaine",
             picture: "/images/FleurHibiscus.png",
@@ -27,7 +25,6 @@ export default function Services() {
         {
             formula: "Formule Tiaré",
             note: "",
-            flower: "Tiaré",
             price: "1200€/mois*",
             screenreader: "1200 euros par mois",
             picture: "/images/FleurTiaré.png",
@@ -53,7 +50,8 @@ export default function Services() {
                         <img
                             className="item-picture"
                             src={service.picture}
-                            alt={`Fleur ${service.flower}`}
+                            alt=""
+                            aria-hidden="true"
                         />
                         <h3 className="item-formula">
                             {service.formula}

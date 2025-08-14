@@ -47,12 +47,14 @@ export default function Home() {
                 src="/images/FiligraneTiare.png
             "
                 alt=""
+                aria-hidden="true"
             />
             <img
                 className="home-filigrane2"
                 src="/images/FiligraneTiare.png
             "
                 alt=""
+                aria-hidden="true"
             />
         </>
     );
