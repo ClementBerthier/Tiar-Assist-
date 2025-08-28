@@ -15,3 +15,4 @@ export default function ModalTarifs({ isOpen, onClose }) {
         </div>
     );
 }
+// TODO: À finir et intégrer dans la page Tarifs

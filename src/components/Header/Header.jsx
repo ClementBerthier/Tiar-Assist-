@@ -5,7 +5,7 @@ export default function Header() {
         <header className="header">
             <div className="header-logo">
                 <img
-                    className="header-logo-picture"
+                    className="logo-picture"
                     src="/images/LogoTiare.png"
                     alt="Logo Tiaré Assist'"
                 />
