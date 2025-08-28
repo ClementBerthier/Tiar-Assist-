@@ -23,8 +23,8 @@ export default function Footer() {
                         menuOpen ? "visible" : ""
                     }`}
                 >
-                    <a href="#">Mentions légales</a>
-                    <a href="#">Conditions générale d'utilisation</a>
+                    <a href="/ML">Mentions légales</a>
+                    <a href="/CGU">Conditions générale d'utilisation</a>
                     <a href="#">Conditions générales de ventes</a>
                     <a href="#">Politique de confidentialité</a>
                 </div>
