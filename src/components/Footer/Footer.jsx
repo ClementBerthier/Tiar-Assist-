@@ -25,8 +25,8 @@ export default function Footer() {
                 >
                     <a href="/ML">Mentions légales</a>
                     <a href="/CGU">Conditions générale d'utilisation</a>
-                    <a href="#">Conditions générales de ventes</a>
-                    <a href="#">Politique de confidentialité</a>
+                    <a href="/CGV">Conditions générales de ventes</a>
+                    <a href="/PrivacyPolicy">Politique de confidentialité</a>
                 </div>
                 <div className="mobile-copyright">
                     <p className="copyright">
