@@ -9,10 +9,13 @@ export default function ModalTarifs({ isOpen, onClose }) {
                 <button className="close-btn" onClick={onClose}>
                     &times;
                 </button>
-                <h2>Titre de la modale</h2>
-                <p>Ceci est le contenu de la modale.</p>
+                <h2 className="modal-title">Details hors formule </h2>
+                <img
+                    className="modal-picture"
+                    src="/images/Priceboard.png"
+                    alt="Tableau détaillant les différents prix étant hors formules"
+                />
             </div>
         </div>
     );
 }
-// TODO: À finir et intégrer dans la page Tarifs
