@@ -56,6 +56,48 @@ export default function Home() {
                 alt=""
                 aria-hidden="true"
             />
+            <img
+                className="home-filigrane3"
+                src="/images/FiligraneTiare.png
+            "
+                alt=""
+                aria-hidden="true"
+            />
+            <img
+                className="home-filigrane4"
+                src="/images/FiligraneTiare.png
+            "
+                alt=""
+                aria-hidden="true"
+            />
+            <img
+                className="home-filigrane5"
+                src="/images/FiligraneTiare.png
+            "
+                alt=""
+                aria-hidden="true"
+            />
+            <img
+                className="home-filigrane6"
+                src="/images/FiligraneTiare.png
+            "
+                alt=""
+                aria-hidden="true"
+            />
+            <img
+                className="home-filigrane7"
+                src="/images/FiligraneTiare.png
+            "
+                alt=""
+                aria-hidden="true"
+            />
+            <img
+                className="home-filigrane8"
+                src="/images/FiligraneTiare.png
+            "
+                alt=""
+                aria-hidden="true"
+            />
         </>
     );
 }

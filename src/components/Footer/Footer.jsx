@@ -29,6 +29,7 @@ export default function Footer() {
                     <a href="/CGV">Conditions générales de ventes</a>
                     <a href="/PrivacyPolicy">Politique de confidentialité</a>
                 </div>
+                <div></div>
                 <div className="mobile-copyright">
                     <p className="copyright">
                         Tiaré Assist' © 2025 - Designé et développé par Clément
