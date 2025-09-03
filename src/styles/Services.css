@@ -99,8 +99,18 @@
             gap: 2rem;
             margin: 1rem;
             .list-item {
-                width: 20%;
-                height: 16rem;
+                width: 25%;
+                height: 19rem;
+            }
+        }
+    }
+}
+@media screen and (min-width: 768px) {
+    .services {
+        .services-list {
+            .list-item {
+                width: 25%;
+                height: 17rem;
             }
         }
     }

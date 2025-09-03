@@ -38,7 +38,70 @@ export default function Footer() {
                 </div>
             </div>
 
-            <div className="footer-desktop"></div>
+            <div className="footer-desktop">
+                <div className="desktop-container">
+                    <div className="container-about">
+                        <div className="about-logo">
+                            <img
+                                className="logo-picture"
+                                src="/images/LogoTiareFooter.png"
+                                alt="Logo Tiaré Assist'"
+                            />
+                            <h2 className="logo-title">Tiaré Assist'</h2>
+                        </div>
+                        <div className="about-description">
+                            <p className="description-text">
+                                Des solutions adaptées à vos besoins. Je mets
+                                mon expertise à votre service pour une gestion
+                                plus simple et professionnelle de vos projets.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="container-navigation">
+                        <h2 className="navigation-title">Navigation</h2>
+                        <a className="navigation-link" href="">
+                            Accueil
+                        </a>
+                        <a className="navigation-link" href="">
+                            Services
+                        </a>
+                        <a className="navigation-link" href="">
+                            Contact
+                        </a>
+                    </div>
+                    <div className="container-contact">
+                        <h2 className="contact-title">Contact</h2>
+                        <div className="contact-infos">
+                            <a
+                                className="infos-link"
+                                href="mailto:tiareassist@gmail.com"
+                            >
+                                tiareassist@gmail.com
+                            </a>
+                            <a className="infos-link" href="tel:+33645589876">
+                                06.45.58.98.76
+                            </a>
+                        </div>
+                        <div className="contact-socials">
+                            <a className="socials-link" href="">
+                                <img className="link-picture" src="" alt="" />
+                            </a>
+                            <a className="socials-link" href="">
+                                <img className="link-picture" src="" alt="" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div className="desktop-line">
+                    <div className="line"></div>
+                </div>
+                <div className="desktop-copyright">
+                    <p className="copyright">
+                        Tiaré Assist' © 2025 - Designé et développé par Clément
+                        Berthier Développeur
+                    </p>
+                </div>
+            </div>
         </div>
     );
 }

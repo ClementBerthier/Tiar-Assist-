@@ -22,13 +22,16 @@
     .contact-container {
         display: flex;
         flex-direction: column;
+
+        align-items: center;
+
         .contact-content {
             display: flex;
             flex-direction: column;
             align-items: center;
             .content-information {
                 box-shadow: 0 0.5rem 1rem rgba(38, 94, 66, 0.52);
-                width: 80%;
+                width: 20rem;
                 z-index: 1;
                 background-color: #ffffff;
                 display: flex;
@@ -82,7 +85,7 @@
         }
         .contact-form {
             margin: 1rem;
-            max-width: 600px;
+            width: 70%;
             background-color: #ffffff;
             box-shadow: 0 0.5rem 1rem rgba(38, 94, 66, 0.52);
             padding: 1rem;
@@ -148,6 +151,25 @@
                         background-color: #1e4b34;
                     }
                 }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .contact {
+        .contact-container {
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 2rem;
+            .contact-content {
+                .content-information {
+                    width: 25rem;
+                }
+            }
+            .contact-form {
+                margin: 1rem 0 1rem 0;
             }
         }
     }

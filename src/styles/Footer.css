@@ -76,9 +76,90 @@
             text-align: center;
         }
     }
+}
 
-    .footer-desktop {
-        display: none;
+.footer-desktop {
+    background: linear-gradient(#f5d8b2, #c1d373);
+    .desktop-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-bottom: 1rem;
+        width: 50%;
+        margin: auto;
+
+        .container-about {
+            display: flex;
+            flex-direction: column;
+            .about-logo {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                .logo-picture {
+                    width: 6rem;
+                    height: auto;
+                    display: block;
+                    margin: 0.5rem 0;
+                }
+                .logo-title {
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                    margin-left: 1rem;
+                }
+            }
+            .about-description {
+                width: 20rem;
+                padding-bottom: 1rem;
+                font-size: 1rem;
+                color: #333;
+            }
+        }
+        .container-navigation {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .navigation-title {
+                font-size: 1.5rem;
+                font-weight: bold;
+                margin: 2.5rem 0 1rem 0;
+            }
+            .navigation-link {
+                margin: auto 0.5rem;
+                color: #265e42;
+            }
+        }
+        .container-contact {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .contact-title {
+                font-size: 1.5rem;
+                font-weight: bold;
+                margin: 2.5rem 0 1rem 0;
+            }
+            .contact-infos {
+                display: flex;
+                flex-direction: column;
+                .infos-link {
+                    margin: 0.2rem 0.5rem;
+                    color: #265e42;
+                }
+            }
+        }
+    }
+    .desktop-line {
+        background-color: #ccd480;
+        .line {
+            height: 1px;
+            width: 50%;
+            margin: auto;
+            background-color: #000000;
+        }
+    }
+    .desktop-copyright {
+        padding: 1rem;
+        background: linear-gradient(#ccd480, #c1d373);
+        text-align: center;
     }
 }
 
@@ -86,6 +167,9 @@
     .footer {
         .footer-mobile {
             display: none;
+        }
+        .footer-desktop {
+            display: block;
         }
     }
 }

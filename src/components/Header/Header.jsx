@@ -7,7 +7,7 @@ export default function Header() {
                 <img
                     className="logo-picture"
                     src="/images/LogoTiare.png"
-                    alt="Logo Tiaré Assist'"
+                    alt="Logo Tiaré Assist, une fleur de Tiaré stylisée en blanc et jaune et rouge contenant la lettre M au millieu"
                 />
             </div>
             <h1 className="header-title">Bienvenue chez Tiaré Assist'</h1>
