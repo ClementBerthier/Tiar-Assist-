@@ -36,53 +36,60 @@ export default function Services() {
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     return (
-        <div className="services">
-            <h2 className="services-title">Nos Services</h2>
-            <p className="services-description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
-                explicabo facere quas nihil ipsam quidem aperiam et non soluta
-                consequatur, nostrum, odio minima quis fugit laboriosam? Veniam
-                reiciendis sunt dolorem.
-            </p>
-            <div className="services-list">
-                {services.map((service, index) => (
-                    <div className="list-item" key={index}>
-                        <img
-                            className="item-picture"
-                            src={service.picture}
-                            alt=""
-                            aria-hidden="true"
-                        />
-                        <h3 className="item-formula">
-                            {service.formula}
-                            {service.note}
-                        </h3>
-                        <p className="item-price" aria-label={service.price}>
-                            <strong>
-                                <span className="price">{service.price}</span>
-                            </strong>
-                        </p>
-                        <p className="item-description">
-                            {service.description}
-                        </p>
-                    </div>
-                ))}
+        <div className="services" id="services">
+            <div className="services-container">
+                <h2 className="services-title">Nos Services</h2>
+                <p className="services-description">
+                    Libérez-vous de l’administratif. Je prends en charge vos
+                    mails, dossiers, mises en page, suivis et classements afin
+                    que vous puissiez vous concentrer sur l’essentiel : votre
+                    activité. Prestation à l’heure, à la semaine ou au mois.
+                </p>
+                <div className="services-list">
+                    {services.map((service, index) => (
+                        <div className="list-item" key={index}>
+                            <img
+                                className="item-picture"
+                                src={service.picture}
+                                alt=""
+                                aria-hidden="true"
+                            />
+                            <h3 className="item-formula">
+                                {service.formula}
+                                {service.note}
+                            </h3>
+                            <p
+                                className="item-price"
+                                aria-label={service.price}
+                            >
+                                <strong>
+                                    <span className="price">
+                                        {service.price}
+                                    </span>
+                                </strong>
+                            </p>
+                            <p className="item-description">
+                                {service.description}
+                            </p>
+                        </div>
+                    ))}
+                </div>
+                <p className="services-note">
+                    *Tous nos tarifs sont des estimations minimales hors taxes.
+                    Pour plus de détails sur les tarifs de nos services, voir la
+                    grille tarifaire en cliquant ci-dessous.
+                </p>
+                <button
+                    onClick={() => setIsModalOpen(true)}
+                    className="services-button "
+                >
+                    Infos tarifs
+                </button>
+                <ModalTarifs
+                    isOpen={isModalOpen}
+                    onClose={() => setIsModalOpen(false)}
+                />
             </div>
-            <p className="services-note">
-                *Tous nos tarifs sont des estimations minimales hors taxes. Pour
-                plus de détails sur les tarifs de nos services, voir la grille
-                tarifaire en cliquant ci-dessous.
-            </p>
-            <button
-                onClick={() => setIsModalOpen(true)}
-                className="services-button "
-            >
-                Infos tarifs
-            </button>
-            <ModalTarifs
-                isOpen={isModalOpen}
-                onClose={() => setIsModalOpen(false)}
-            />
         </div>
     );
 }

@@ -39,6 +39,7 @@ export default function Footer() {
             </div>
 
             <div className="footer-desktop">
+                <div className="desktop-banner"></div>
                 <div className="desktop-container">
                     <div className="container-about">
                         <div className="about-logo">
@@ -59,13 +60,13 @@ export default function Footer() {
                     </div>
                     <div className="container-navigation">
                         <h2 className="navigation-title">Navigation</h2>
-                        <a className="navigation-link" href="">
+                        <a className="navigation-link" href="#accueil">
                             Accueil
                         </a>
-                        <a className="navigation-link" href="">
+                        <a className="navigation-link" href="#services">
                             Services
                         </a>
-                        <a className="navigation-link" href="">
+                        <a className="navigation-link" href="#contact">
                             Contact
                         </a>
                     </div>
@@ -98,7 +99,8 @@ export default function Footer() {
                 <div className="desktop-copyright">
                     <p className="copyright">
                         Tiaré Assist' © 2025 - Designé et développé par Clément
-                        Berthier Développeur
+                        Berthier Développeur -{" "}
+                        <a href="/ML">Mentions légales</a>
                     </p>
                 </div>
             </div>

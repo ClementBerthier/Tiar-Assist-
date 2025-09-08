@@ -133,6 +133,11 @@ export default function CGU() {
                         </p>
                     </div>
                 </div>
+                <div className="legalMentions-otherMentions">
+                    <a href="/ML">Mentions Légales</a>
+                    <a href="/CGV">Conditions générales de ventes</a>
+                    <a href="/PrivacyPolicy">Politique de confidentialité</a>
+                </div>
             </div>
             <Footer />
         </>

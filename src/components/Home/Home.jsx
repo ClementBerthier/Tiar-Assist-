@@ -5,7 +5,7 @@ export default function Home() {
     return (
         <>
             <Header />
-            <div className="home">
+            <div className="home" id="accueil">
                 <div className="home-picture">
                     <img
                         src="/images/DesktopHome.png"

@@ -46,6 +46,11 @@ export default function ML() {
                         </p>
                     </div>
                 </div>
+                <div className="legalMentions-otherMentions">
+                    <a href="/CGU">Conditions générale d'utilisation</a>
+                    <a href="/CGV">Conditions générales de ventes</a>
+                    <a href="/PrivacyPolicy">Politique de confidentialité</a>
+                </div>
             </div>
             <Footer />
         </>

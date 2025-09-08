@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     background: linear-gradient(#c1d373, #f5d8b2);
     .header-logo {
         z-index: 1;
@@ -17,25 +16,33 @@
             display: block;
         }
     }
-    .header-title {
-        z-index: 1;
-        font-size: 4.5rem;
-        font-weight: 500;
-        color: #333;
-        margin: 1rem 1rem;
-        text-align: center;
-        font-family: "Dancing Script", sans-serif;
-    }
     .header-presentation {
         z-index: 1;
-        font-size: 1.2rem;
-        color: #000000;
-        text-align: center;
-        max-width: 50rem;
-        margin: 1rem 1rem;
-        text-align: center;
-        text-shadow: white 0px 0px 5px;
+        background-color: white;
+        border-radius: 30px;
+        box-shadow: 0 0.5rem 1rem rgba(38, 94, 66, 0.52);
+        margin: 2rem;
+        .presentation-title {
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: #333;
+            margin: 1rem 1rem;
+            text-align: center;
+            font-family: "Dancing Script", sans-serif;
+        }
+        .presentation-text {
+            z-index: 1;
+            font-size: 1.1rem;
+            color: #333;
+            text-align: center;
+            max-width: 50rem;
+            margin: 1rem 1rem;
+            padding: 1rem;
+            text-align: center;
+            font-family: "Montserrat", sans-serif;
+        }
     }
+
     .header-nav {
         z-index: 1;
 

@@ -156,6 +156,11 @@ export default function CGV() {
                         </p>
                     </div>
                 </div>
+                <div className="legalMentions-otherMentions">
+                    <a href="/ML">Mentions Légales</a>
+                    <a href="/CGU">Conditions générale d'utilisation</a>
+                    <a href="/CGV">Conditions générales de ventes</a>
+                </div>
             </div>
             <Footer />
         </>

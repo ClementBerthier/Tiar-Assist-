@@ -11,6 +11,7 @@
             justify-content: space-between;
             overflow: hidden;
             border-top: 1px solid #000000;
+            font-family: "Lato", sans-serif;
 
             &::after {
                 content: "";
@@ -36,6 +37,8 @@
                 font-size: 1.2rem;
                 font-weight: bold;
                 margin: 1rem;
+                font-family: "Lato", sans-serif;
+                color: #333;
             }
             .banner-arrow {
                 width: 1rem;
@@ -63,6 +66,7 @@
                 padding: 0.6rem 0;
                 text-decoration: none;
                 color: #333;
+                font-family: "Montserrat", sans-serif;
             }
         }
 
@@ -74,18 +78,27 @@
             padding: 1rem;
             background: #c1d373;
             text-align: center;
+            font-family: "Montserrat", sans-serif;
         }
     }
 }
 
 .footer-desktop {
-    background: linear-gradient(#f5d8b2, #c1d373);
+    background-color: #c1d373;
+    .desktop-banner {
+        height: 7rem;
+        width: 100%;
+        background-image: url("/images/BannerFlower.png");
+        background-size: 20vw;
+        background-position: center;
+    }
     .desktop-container {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         padding-bottom: 1rem;
-        width: 50%;
+        width: 78%;
+        max-width: 50rem;
         margin: auto;
 
         .container-about {
@@ -105,6 +118,7 @@
                     font-size: 1.5rem;
                     font-weight: bold;
                     margin-left: 1rem;
+                    color: #333;
                 }
             }
             .about-description {
@@ -112,6 +126,7 @@
                 padding-bottom: 1rem;
                 font-size: 1rem;
                 color: #333;
+                font-family: "Montserrat", sans-serif;
             }
         }
         .container-navigation {
@@ -122,10 +137,17 @@
                 font-size: 1.5rem;
                 font-weight: bold;
                 margin: 2.5rem 0 1rem 0;
+                font-family: "Lato", sans-serif;
+                color: #333;
             }
             .navigation-link {
                 margin: auto 0.5rem;
-                color: #265e42;
+                color: #333;
+                font-family: "Montserrat", sans-serif;
+                text-decoration: none;
+                &:hover {
+                    text-decoration: underline;
+                }
             }
         }
         .container-contact {
@@ -136,19 +158,28 @@
                 font-size: 1.5rem;
                 font-weight: bold;
                 margin: 2.5rem 0 1rem 0;
+                font-family: "Lato", sans-serif;
+                color: #333;
             }
             .contact-infos {
                 display: flex;
                 flex-direction: column;
+                gap: 0.5rem;
+                align-items: center;
                 .infos-link {
                     margin: 0.2rem 0.5rem;
-                    color: #265e42;
+                    color: #333;
+                    font-family: "Montserrat", sans-serif;
+                    text-decoration: none;
+                    &:hover {
+                        text-decoration: underline;
+                    }
                 }
             }
         }
     }
     .desktop-line {
-        background-color: #ccd480;
+        background-color: #c1d373;
         .line {
             height: 1px;
             width: 50%;
@@ -158,18 +189,28 @@
     }
     .desktop-copyright {
         padding: 1rem;
-        background: linear-gradient(#ccd480, #c1d373);
+        background-color: #c1d373;
         text-align: center;
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 850px) {
     .footer {
         .footer-mobile {
             display: none;
         }
         .footer-desktop {
             display: block;
+        }
+    }
+}
+@media screen and (max-width: 849px) {
+    .footer {
+        .footer-mobile {
+            display: block;
+        }
+        .footer-desktop {
+            display: none;
         }
     }
 }
