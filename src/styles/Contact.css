@@ -82,6 +82,9 @@
                         .content-text {
                             margin-bottom: 0.1rem;
                         }
+                        .content-link {
+                            color: #265e42;
+                        }
                     }
                 }
                 .content-note {

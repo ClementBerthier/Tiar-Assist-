@@ -9,7 +9,7 @@ export default function ModalTarifs({ isOpen, onClose }) {
                 <button className="close-btn" onClick={onClose}>
                     &times;
                 </button>
-                <h2 className="modal-title">Details hors formule </h2>
+                <h2 className="modal-title">Détail hors formule </h2>
                 <img
                     className="modal-picture"
                     src="/images/Priceboard.png"
