@@ -235,3 +235,31 @@
         }
     }
 }
+
+@media screen and (min-width: 1300px) {
+    .home {
+        .home-picture {
+            max-width: 35rem;
+        }
+        .home-content {
+            max-width: 50rem;
+            .content-description {
+                font-size: 1.5rem;
+            }
+            .content-comment {
+                .comment-picture {
+                    img {
+                        width: 5rem;
+                        height: 5rem;
+                    }
+                }
+                .comment-text {
+                    font-size: 1.3rem;
+                    .text-description {
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+        }
+    }
+}

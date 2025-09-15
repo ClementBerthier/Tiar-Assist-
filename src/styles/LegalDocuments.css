@@ -43,3 +43,17 @@
         }
     }
 }
+
+@media screen and (min-width: 1300px) {
+    .legalMentions {
+        .legalMentions-content {
+            padding: 40px;
+            .section-title {
+                font-size: 2rem;
+            }
+            .section-text {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}

@@ -45,6 +45,7 @@
 
     .header-nav {
         z-index: 1;
+        margin-bottom: 2rem;
 
         .nav-list {
             box-shadow: 0 0.5rem 1rem rgba(38, 94, 66, 0.52);
@@ -54,6 +55,7 @@
             justify-content: space-between;
             align-items: center;
             list-style: none;
+            font-family: "lato", sans-serif;
             padding: 1rem 0rem;
             margin: 2rem 2rem 0 2rem;
             border-radius: 30px;
@@ -82,6 +84,31 @@
         }
         .header-nav {
             display: none;
+        }
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .header {
+        .header-presentation {
+            width: 70%;
+            .presentation-title {
+                font-size: 3rem;
+            }
+            .presentation-text {
+                width: 90%;
+                font-size: 1.8rem;
+                max-width: none;
+                margin: 1rem auto 2rem auto;
+            }
+        }
+        .header-nav {
+            .nav-list {
+                .list-item {
+                    font-size: 2.2rem;
+                    margin: 0 2rem;
+                }
+            }
         }
     }
 }
