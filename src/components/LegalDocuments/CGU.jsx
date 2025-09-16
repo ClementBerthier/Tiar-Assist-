@@ -14,7 +14,7 @@ export default function CGU() {
                     <div className="content-section">
                         <h2 className="section-title">Article 1 : Objet</h2>
                         <p className="section-text">
-                            Les présentes conditions générales d'utilisation
+                            Les présentes conditions générales d’utilisation
                             (CGU) ont pour objet de définir les modalités et
                             conditions dans lesquelles les utilisateurs peuvent
                             accéder au site et utiliser ses services.
@@ -26,15 +26,15 @@ export default function CGU() {
                         </h2>
                         <p className="section-text">
                             Le site Tiaré Assist' est accessible gratuitement à
-                            tout utilisateur disposant d'un accès à internet.
-                            Tous les coûts afférents à l'accès au site, que ce
-                            soit les frais matériels, logiciels ou d'accès à
-                            internet, sont exclusivement à la charge de
-                            l'utilisateur. L'éditeur ne pourra être tenu
+                            tout utilisateur disposant d’un accès à Internet.
+                            Tous les coûts afférents à l’accès au site, qu’il
+                            s’agisse de frais matériels, logiciels ou d’accès à
+                            Internet, sont exclusivement à la charge de
+                            l’utilisateur. L’éditeur ne pourra être tenu
                             responsable de tout dysfonctionnement du réseau ou
-                            des serveurs ou de tout autre événement échappant au
-                            contrôle raisonnable, qui empêcherait ou dégraderait
-                            l'accès au site.
+                            des serveurs, ou de tout autre événement échappant à
+                            son contrôle raisonnable, qui empêcherait ou
+                            dégraderait l’accès au site.
                         </p>
                     </div>
                     <div className="content-section">
@@ -42,29 +42,28 @@ export default function CGU() {
                             Article 3 : Propriété intellectuelle
                         </h2>
                         <p className="section-text">
-                            L'ensemble des éléments du site (textes, images,
-                            graphismes, logo, icônes, etc.) sont la propriété
+                            L’ensemble des éléments du site (textes, images,
+                            graphismes, logo, icônes, etc.) est la propriété
                             exclusive de Tiaré Assist' ou de ses partenaires.
                             Toute reproduction, représentation, modification,
                             publication, adaptation de tout ou partie des
                             éléments du site, quel que soit le moyen ou le
                             procédé utilisé, est interdite, sauf autorisation
-                            écrite préalable de Tiaré Assist'. Tout éléments
-                            n'appartenant pas a Tiaré Assist' est mentionné dans
+                            écrite préalable de Tiaré Assist'. Tout élément
+                            n’appartenant pas à Tiaré Assist' est mentionné sur
                             le site et crédité.
                         </p>
                     </div>
                     <div className="content-section">
                         <h2 className="section-title">
-                            Article 4 : Responsabilité de Clément Berthier
-                            Développeur
+                            Article 4 : Responsabilité Tiaré Assist'
                         </h2>
                         <p className="section-text">
-                            Tiaré Assist' s'efforce de fournir des informations
+                            Tiaré Assist' s’efforce de fournir des informations
                             aussi précises que possible. Toutefois, Tiaré
-                            Assist' ne pourra être tenu responsable des
+                            Assist'; ne pourra être tenu responsable des
                             omissions, des inexactitudes et des carences dans la
-                            mise à jour, qu'elles soient de son fait ou du fait
+                            mise à jour, qu’elles soient de son fait ou du fait
                             des tiers partenaires qui lui fournissent ces
                             informations.
                         </p>
@@ -75,17 +74,17 @@ export default function CGU() {
                         </h2>
                         <p className="section-text">
                             Conformément à la réglementation en vigueur, Tiaré
-                            Assist' s'engage à protéger la vie privée des
+                            Assist' s’engage à protéger la vie privée des
                             utilisateurs et la confidentialité de leurs données
-                            personnelles. Pour plus d'informations, veuillez
+                            personnelles. Pour plus d’informations, veuillez
                             consulter la politique de confidentialité.
                         </p>
                     </div>
                     <div className="content-section">
                         <h2 className="section-title">Article 6 : Cookies</h2>
                         <p className="section-text">
-                            Le site Tiaré Assist' n'utilise pas de cookies pour
-                            améliorer l'expérience utilisateur et fournir des
+                            Le site Tiaré Assist' n’utilise pas de cookies pour
+                            améliorer l’expérience utilisateur et fournir des
                             services adaptés.
                         </p>
                     </div>
@@ -95,10 +94,10 @@ export default function CGU() {
                         </h2>
                         <p className="section-text">
                             Le site peut contenir des liens hypertextes vers
-                            d'autres sites. Tiaré Assist' s'efforce de vérifier
-                            la qualité et l'intégrité de ces sites. Néanmoins,
-                            Tiaré Assist' n'a pas la possibilité de vérifier
-                            leur contenu mis à jour et n'assumera en conséquence
+                            d’autres sites. Tiaré Assist' s’efforce de vérifier
+                            la qualité et l’intégrité de ces sites. Néanmoins,
+                            Tiaré Assist' n’a pas la possibilité de vérifier
+                            leur contenu mis à jour et n’assumera en conséquence
                             aucune responsabilité de ce fait.
                         </p>
                     </div>
@@ -119,7 +118,7 @@ export default function CGU() {
                         </h2>
                         <p className="section-text">
                             Les présentes CGU sont soumises au droit français.
-                            En cas de litige, et à défaut d'accord amiable, le
+                            En cas de litige, et à défaut d’accord amiable, le
                             litige sera porté devant les tribunaux français
                             conformément aux règles de compétence en vigueur.
                         </p>
@@ -127,8 +126,8 @@ export default function CGU() {
                     <div className="content-section">
                         <h2 className="section-title">Article 10 : Contact</h2>
                         <p className="section-text">
-                            Pour toute question relative à l'utilisation du
-                            site, vous pouvez nous contacter grâce a la section
+                            Pour toute question relative à l’utilisation du
+                            site, vous pouvez nous contacter grâce à la section
                             contact du site.
                         </p>
                     </div>

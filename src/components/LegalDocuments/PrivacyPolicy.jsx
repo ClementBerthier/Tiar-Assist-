@@ -31,10 +31,10 @@ export default function CGV() {
                         </h2>
                         <p className="section-text">
                             Le responsable du traitement des données
-                            personnelles est géré par Madame Mandy Micheau,
-                            domicilié au 12c boulevard de la Mediterranee 31270
-                            Frouzins. Adresse de courrier électronique :
-                            tiareassist@gmail.com, numéro de téléphone :
+                            personnelles est Madame Mandy Micheau, domiciliée au
+                            12c boulevard de la Méditerranée, 31270 Frouzins.
+                            Adresse de courrier électronique :
+                            tiareassist@gmail.com Numéro de téléphone :
                             06.45.58.95.76
                         </p>
                     </div>
@@ -45,10 +45,10 @@ export default function CGV() {
                         <p className="section-text">
                             Nous collectons différentes données personnelles en
                             fonction de votre utilisation de notre site et de
-                            nos services, notamment : Votre nom, prénom, adresse
-                            électronique, numéro de téléphone, et toute autres
-                            informations que vous nous transmettez via notre
-                            formulaire de contact.
+                            nos services, notamment : votre nom, prénom, adresse
+                            électronique, numéro de téléphone, ainsi que toutes
+                            autres informations que vous nous transmettez via
+                            notre formulaire de contact.
                         </p>
                     </div>
                     <div className="content-section">
@@ -58,10 +58,9 @@ export default function CGV() {
                         <p className="section-text">
                             Les données collectées sont utilisées pour les
                             finalités suivantes : exécution des contrats de
-                            secrétariat et aux réponses au demandes
-                            d'information. Les données collectées ne sont en
-                            aucun cas transmises à des tiers sans votre
-                            consentement.
+                            secrétariat et réponses aux demandes d'information.
+                            Les données collectées ne sont en aucun cas
+                            transmises à des tiers sans votre consentement.
                         </p>
                     </div>
                     <div className="content-section">
@@ -84,7 +83,7 @@ export default function CGV() {
                             partagées, vendues ou louées à des tiers sans votre
                             consentement. Les seuls cas de partage de données
                             sont ceux nécessaires à l'exécution de nos services,
-                            notamment avec nos prestataires sous-traitées.
+                            notamment avec nos prestataires sous-traitants.
                         </p>
                     </div>
                     <div className="content-section">
@@ -104,12 +103,12 @@ export default function CGV() {
                         </h2>
                         <p className="section-text">
                             Vous disposez des droits suivants concernant vos
-                            données personnelles: droit d'accès, droit de
+                            données personnelles : droit d'accès, droit de
                             rectification, droit à l'effacement, droit à la
                             limitation du traitement, droit à la portabilité des
                             données, droit d'opposition et droit de retirer
                             votre consentement à tout moment. Pour exercer ces
-                            droits, vous pouvez me contacter via le formulaire
+                            droits, vous pouvez nous contacter via le formulaire
                             de contact présent sur le site.
                         </p>
                     </div>

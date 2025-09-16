@@ -16,7 +16,7 @@ export default function Header() {
                 </h1>
                 <p className="presentation-text">
                     Après 20 ans dans l’administration et l’informatique, dont
-                    11 en télétravail, j’ai choisi l’autoentrepreneuriat pour
+                    11 en télétravail, j’ai choisi l’auto-entrepreneuriat pour
                     allier ma vie personnelle et professionnelle. Je vous
                     propose mes services en présentiel ou en télétravail, mais
                     toujours avec autant de rigueur et de professionnalisme.

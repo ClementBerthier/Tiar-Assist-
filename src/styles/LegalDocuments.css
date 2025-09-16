@@ -26,6 +26,10 @@
         .section-text {
             margin-bottom: 1rem;
             text-align: justify;
+            .bold,
+            strong {
+                font-weight: bold;
+            }
         }
     }
     .legalMentions-otherMentions {

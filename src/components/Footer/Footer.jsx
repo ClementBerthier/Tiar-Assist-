@@ -98,9 +98,11 @@ export default function Footer() {
                 </div>
                 <div className="desktop-copyright">
                     <p className="copyright">
-                        Tiaré Assist' © 2025 - Designé et développé par Clément
-                        Berthier Développeur -{" "}
-                        <a href="/ML">Mentions légales</a>
+                        Tiaré Assist' © 2025 - Designé et développé par{" "}
+                        <a href="https://www.clementberthierdeveloppeur.fr/">
+                            Clément Berthier Développeur{" "}
+                        </a>
+                        - <a href="/ML">Mentions légales</a>
                     </p>
                 </div>
             </div>
