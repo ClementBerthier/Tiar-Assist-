@@ -4,33 +4,36 @@ import "./../../styles/Contact.css";
 
 export default function Contact() {
     const formRef = useRef(null);
-    const [status, setStatus] = useState("sending");
+    const [status, setStatus] = useState("idle");
     const [errorMsg, setErrorMsg] = useState("");
+
+    // tes identifiants EmailJS en dur
+    const SERVICE_ID = "service_pi67s1e";
+    const TEMPLATE_ID = "tempalte_tm2h0sn";
+    const PUBLIC_KEY = "44pHflS6731bDq1Ls";
 
     const onSubmit = async (e) => {
         e.preventDefault();
-
         setErrorMsg("");
 
-        const trap = formRef.current?.element["website"];
+        // Honeypot anti-bot (correction: elements avec un "s")
+        const trap = formRef.current?.elements["website"];
         if (trap && trap.value.trim() !== "") {
             setStatus("error");
             setErrorMsg("Echec de l'envoi.");
             return;
         }
+
         setStatus("sending");
 
         try {
-            await emailjs.sendForm(
-                import.meta.env.SERVICE_ID,
-                import.meta.env.TEMPLATE_ID,
-                formRef.current,
-                { publicKey: import.meta.env.EMAILPUBLIC_KEY }
-            );
+            await emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, formRef.current, {
+                publicKey: PUBLIC_KEY,
+            });
             setStatus("sent");
             formRef.current.reset();
         } catch (error) {
-            console.error(error);
+            console.error("EmailJS error:", error);
             setStatus("error");
             setErrorMsg("Une erreur est survenue. Merci de réessayer.");
         }
@@ -41,9 +44,10 @@ export default function Contact() {
             <div className="contact-bigcontainer">
                 <h2 className="contact-title">Nous Contacter</h2>
                 <p className="contact-description">
-                    Vous avez envie de travailler avec moi ?<br></br> Remplissez
-                    ce formulaire et je vous contacterai sous 24 h.
+                    Vous avez envie de travailler avec moi ?<br />
+                    Remplissez ce formulaire et je vous contacterai sous 24 h.
                 </p>
+
                 <div className="contact-container">
                     <div className="contact-content">
                         <div className="content-information">
@@ -82,7 +86,7 @@ export default function Contact() {
                                     <p className="content-text">Téléphone</p>
                                     <a
                                         className="content-link"
-                                        href="tel:+33645589876 "
+                                        href="tel:+33645589876"
                                     >
                                         06.45.58.95.76
                                     </a>
@@ -100,13 +104,14 @@ export default function Contact() {
                             </p>
                         </div>
                     </div>
+
                     <div className="contact-form">
                         <form
                             className="form"
                             ref={formRef}
                             onSubmit={onSubmit}
                         >
-                            {/* Honeypot anti-spam : caché via CSS (display:none) */}
+                            {/* Honeypot anti-spam */}
                             <input
                                 type="text"
                                 name="website"
@@ -118,6 +123,7 @@ export default function Contact() {
                                 }}
                                 aria-hidden="true"
                             />
+
                             <div className="form-identity">
                                 <div className="form-group">
                                     <label htmlFor="firstname">
@@ -142,6 +148,7 @@ export default function Contact() {
                                     />
                                 </div>
                             </div>
+
                             <div className="form-group">
                                 <label htmlFor="email">
                                     Email<span className="star">*</span>
@@ -153,6 +160,7 @@ export default function Contact() {
                                     required
                                 />
                             </div>
+
                             <div className="form-group">
                                 <label htmlFor="message">
                                     Message<span className="star">*</span>
@@ -162,17 +170,39 @@ export default function Contact() {
                                     name="message"
                                     rows="4"
                                     required
-                                ></textarea>
+                                />
                             </div>
+
+                            {/* feedback utilisateur */}
+                            {status === "sending" && (
+                                <p className="form-status">Envoi en cours…</p>
+                            )}
+                            {status === "sent" && (
+                                <p className="form-status success">
+                                    Message envoyé ✅
+                                </p>
+                            )}
+                            {status === "error" && (
+                                <p className="form-status error">{errorMsg}</p>
+                            )}
+
                             <span className="required">*obligatoire</span>
-                            <button type="submit" className="submit-btn">
+                            <button
+                                type="submit"
+                                className="submit-btn"
+                                disabled={status === "sending"}
+                            >
                                 <img
                                     className="submit-btn-picture"
                                     src="/images/paper-plane.png"
                                     alt=""
                                     aria-hidden="true"
                                 />
-                                <span>Envoyer le message</span>
+                                <span>
+                                    {status === "sending"
+                                        ? "Envoi..."
+                                        : "Envoyer le message"}
+                                </span>
                             </button>
                         </form>
                     </div>
