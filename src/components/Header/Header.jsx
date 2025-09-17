@@ -8,6 +8,7 @@ export default function Header() {
                     className="logo-picture"
                     src="/images/LogoTiare.webP"
                     alt="Logo Tiaré Assist, une fleur de Tiaré stylisée en blanc et jaune et rouge contenant la lettre M au millieu"
+                    fetchPriority="high"
                 />
             </div>
             <div className="header-presentation">
