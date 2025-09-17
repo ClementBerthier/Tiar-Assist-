@@ -1,5 +1,4 @@
 import { useRef, useState } from "react";
-import emailjs from "@emailjs/browser";
 import "./../../styles/Contact.css";
 import { useIsMobile } from "../../hook/useIsMobile.js";
 
@@ -15,6 +14,7 @@ export default function Contact() {
 
     const onSubmit = async (e) => {
         e.preventDefault();
+        const { default: emailjs } = await import("@emailjs/browser");
 
         setErrorMsg("");
         setStatus("sending");
