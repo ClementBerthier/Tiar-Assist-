@@ -1,8 +1,10 @@
 import { useState } from "react";
 import "../../styles/Services.css";
 import ModalTarifs from "../Elements/ModalTarifs.jsx";
+import { useIsMobile } from "../../hook/useIsMobile.js";
 
 export default function Services() {
+    const isMobile = useIsMobile();
     const services = [
         {
             formula: "Formule Frangipanier",
@@ -10,6 +12,7 @@ export default function Services() {
             price: "50€/h*",
             screenreader: "50 euros de l'heure",
             picture: "/images/FleurFrangipanier.webP",
+            pictureMobile: "/images/FleurFrangipanierMobile.webP",
             description:
                 "De la plus petite tâche administrative occasionnelle à la tâche récurrente et volumineuse, de l’impression à la rédaction de mails, en passant par l’archivage et la gestion du quotidien. À partir de 50€ HT/heure.",
         },
@@ -19,6 +22,7 @@ export default function Services() {
             price: "400€/semaine*",
             screenreader: "400 euros par semaine",
             picture: "/images/FleurHibiscus.webP",
+            pictureMobile: "/images/FleurHibiscusMobile.webP",
             description:
                 "Une absence maladie ? Un congé d’une semaine ou deux ? Vous avez besoin de quelqu’un qui gère l’essentiel rapidement ? Avoir quelqu’un sans passer par les intérims ? C’est la formule qu’il vous faut. À partir de 400€ HT/semaine.",
         },
@@ -28,6 +32,7 @@ export default function Services() {
             price: "1200€/mois*",
             screenreader: "1200 euros par mois",
             picture: "/images/FleurTiaré.webP",
+            pictureMobile: "/images/FleurTiaréMobile.webP",
             description:
                 "Un remplacement d’un mois ou plus ? Besoin d’une gestion administrative quotidienne ? De vos appels en passant par les mails jusqu’au maintien de l’ordre administratif, cette formule sera plus adéquate. À partir de 1200€ HT/mois.",
         },
@@ -48,12 +53,22 @@ export default function Services() {
                 <div className="services-list">
                     {services.map((service, index) => (
                         <div className="list-item" key={index}>
-                            <img
-                                className="item-picture"
-                                src={service.picture}
-                                alt=""
-                                aria-hidden="true"
-                            />
+                            {!isMobile ? (
+                                <img
+                                    className="item-picture"
+                                    src={service.picture}
+                                    alt=""
+                                    aria-hidden="true"
+                                />
+                            ) : (
+                                <img
+                                    className="item-picture"
+                                    src={service.pictureMobile}
+                                    alt=""
+                                    aria-hidden="true"
+                                />
+                            )}
+
                             <h3 className="item-formula">
                                 {service.formula}
                                 {service.note}

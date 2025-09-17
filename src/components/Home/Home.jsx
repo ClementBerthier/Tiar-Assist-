@@ -1,16 +1,25 @@
 import Header from "../Header/Header.jsx";
+import { useIsMobile } from "../../hook/useIsMobile.js";
 import "./../../styles/Home.css";
 
 export default function Home() {
+    const isMobile = useIsMobile();
     return (
         <>
             <Header />
             <div className="home" id="accueil">
                 <div className="home-picture">
-                    <img
-                        src="/images/DesktopHome.webP"
-                        alt="Environnement de travail sobre et élégant illustrant les services de secrétariat"
-                    />
+                    {!isMobile ? (
+                        <img
+                            src="/images/DesktopHome.webP"
+                            alt="Environnement de travail sobre et élégant illustrant les services de secrétariat"
+                        />
+                    ) : (
+                        <img
+                            src="/images/DesktopHomeMobile.webP"
+                            alt="Environnement de travail sobre et élégant illustrant les services de secrétariat"
+                        />
+                    )}
                 </div>
                 <div className="home-content">
                     <h2 className="content-title">
