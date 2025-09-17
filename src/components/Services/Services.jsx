@@ -9,7 +9,7 @@ export default function Services() {
             note: " (sur mesure)",
             price: "50€/h*",
             screenreader: "50 euros de l'heure",
-            picture: "/images/FleurFrangipanier.png",
+            picture: "/images/FleurFrangipanier.webP",
             description:
                 "De la plus petite tâche administrative occasionnelle à la tâche récurrente et volumineuse, de l’impression à la rédaction de mails, en passant par l’archivage et la gestion du quotidien. À partir de 50€ HT/heure.",
         },
@@ -18,7 +18,7 @@ export default function Services() {
             note: "",
             price: "400€/semaine*",
             screenreader: "400 euros par semaine",
-            picture: "/images/FleurHibiscus.png",
+            picture: "/images/FleurHibiscus.webP",
             description:
                 "Une absence maladie ? Un congé d’une semaine ou deux ? Vous avez besoin de quelqu’un qui gère l’essentiel rapidement ? Avoir quelqu’un sans passer par les intérims ? C’est la formule qu’il vous faut. À partir de 400€ HT/semaine.",
         },
@@ -27,7 +27,7 @@ export default function Services() {
             note: "",
             price: "1200€/mois*",
             screenreader: "1200 euros par mois",
-            picture: "/images/FleurTiaré.png",
+            picture: "/images/FleurTiaré.webP",
             description:
                 "Un remplacement d’un mois ou plus ? Besoin d’une gestion administrative quotidienne ? De vos appels en passant par les mails jusqu’au maintien de l’ordre administratif, cette formule sera plus adéquate. À partir de 1200€ HT/mois.",
         },

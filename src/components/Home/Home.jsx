@@ -8,7 +8,7 @@ export default function Home() {
             <div className="home" id="accueil">
                 <div className="home-picture">
                     <img
-                        src="/images/DesktopHome.png"
+                        src="/images/DesktopHome.webP"
                         alt="Environnement de travail sobre et élégant illustrant les services de secrétariat"
                     />
                 </div>
@@ -29,7 +29,7 @@ export default function Home() {
                     <div className="content-comment">
                         <div className="comment-picture">
                             <img
-                                src="/images/AvatarPersonnel.png"
+                                src="/images/AvatarPersonnel.webP"
                                 alt="Avatar stylisé de la fondatrice de Tiaré Assist'"
                             />
                         </div>
@@ -44,56 +44,56 @@ export default function Home() {
             </div>
             <img
                 className="home-filigrane"
-                src="/images/FiligraneTiare.png
+                src="/images/FiligraneTiare.webP
             "
                 alt=""
                 aria-hidden="true"
             />
             <img
                 className="home-filigrane2"
-                src="/images/FiligraneTiare.png
+                src="/images/FiligraneTiare.webP
             "
                 alt=""
                 aria-hidden="true"
             />
             <img
                 className="home-filigrane3"
-                src="/images/FiligraneTiare.png
+                src="/images/FiligraneTiare.webP
             "
                 alt=""
                 aria-hidden="true"
             />
             <img
                 className="home-filigrane4"
-                src="/images/FiligraneTiare.png
+                src="/images/FiligraneTiare.webP
             "
                 alt=""
                 aria-hidden="true"
             />
             <img
                 className="home-filigrane5"
-                src="/images/FiligraneTiare.png
+                src="/images/FiligraneTiare.webP
             "
                 alt=""
                 aria-hidden="true"
             />
             <img
                 className="home-filigrane6"
-                src="/images/FiligraneTiare.png
+                src="/images/FiligraneTiare.webP
             "
                 alt=""
                 aria-hidden="true"
             />
             <img
                 className="home-filigrane7"
-                src="/images/FiligraneTiare.png
+                src="/images/FiligraneTiare.webP
             "
                 alt=""
                 aria-hidden="true"
             />
             <img
                 className="home-filigrane8"
-                src="/images/FiligraneTiare.png
+                src="/images/FiligraneTiare.webP
             "
                 alt=""
                 aria-hidden="true"

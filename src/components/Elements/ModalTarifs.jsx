@@ -12,7 +12,7 @@ export default function ModalTarifs({ isOpen, onClose }) {
                 <h2 className="modal-title">Détail hors formule </h2>
                 <img
                     className="modal-picture"
-                    src="/images/Priceboard.png"
+                    src="/images/Priceboard.webP"
                     alt="Tableau détaillant les différents prix étant hors formules"
                 />
             </div>

@@ -88,7 +88,7 @@
     .desktop-banner {
         height: 7rem;
         width: 100%;
-        background-image: url("/images/BannerFlower.png");
+        background-image: url("/images/BannerFlower.webP");
         background-size: 20vw;
         background-position: center;
     }

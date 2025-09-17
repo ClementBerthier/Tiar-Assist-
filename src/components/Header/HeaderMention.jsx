@@ -6,7 +6,7 @@ export default function HeaderMention() {
             <div className="header-logo">
                 <img
                     className="logo-picture"
-                    src="/images/LogoTiare.png"
+                    src="/images/LogoTiare.webP"
                     alt="Logo Tiaré Assist'"
                 />
             </div>

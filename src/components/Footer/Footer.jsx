@@ -13,7 +13,7 @@ export default function Footer() {
                     <h2 className="banner-title">Infos pratiques</h2>
                     <img
                         className={`banner-arrow ${menuOpen ? "open" : ""}`}
-                        src="/images/arrow.png"
+                        src="/images/arrow.webP"
                         alt="flèche vers le bas indiquant qu'il y a plus d'informations"
                     />
                 </div>
@@ -45,7 +45,7 @@ export default function Footer() {
                         <div className="about-logo">
                             <img
                                 className="logo-picture"
-                                src="/images/LogoTiareFooter.png"
+                                src="/images/LogoTiareFooter.webP"
                                 alt="Logo Tiaré Assist'"
                             />
                             <h2 className="logo-title">Tiaré Assist'</h2>

@@ -48,7 +48,7 @@ export default function Contact() {
                                 <div className="email-picture">
                                     <img
                                         className="picture"
-                                        src="/images/gmail.png"
+                                        src="/images/gmail.webP"
                                         alt=""
                                         aria-hidden="true"
                                     />
@@ -67,7 +67,7 @@ export default function Contact() {
                                 <div className="phone-picture">
                                     <img
                                         className="picture"
-                                        src="/images/phone.png"
+                                        src="/images/phone.webP"
                                         alt=""
                                         aria-hidden="true"
                                     />
@@ -86,7 +86,7 @@ export default function Contact() {
                         <div className="content-note">
                             <img
                                 className="note-picture"
-                                src="/images/AvatarPersonnel.png"
+                                src="/images/AvatarPersonnel.webP"
                                 alt="Avatar stylisé de la fondatrice de Tiaré Assist'"
                             />
                             <p className="note-text">
@@ -168,7 +168,7 @@ export default function Contact() {
                             >
                                 <img
                                     className="submit-btn-picture"
-                                    src="/images/paper-plane.png"
+                                    src="/images/paper-plane.webP"
                                     alt=""
                                     aria-hidden="true"
                                 />
