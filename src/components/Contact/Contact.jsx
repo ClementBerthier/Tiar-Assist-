@@ -9,7 +9,7 @@ export default function Contact() {
 
     // tes identifiants EmailJS en dur
     const SERVICE_ID = "service_pi67s1e";
-    const TEMPLATE_ID = "tempalte_tm2h0sn";
+    const TEMPLATE_ID = "template_tm2h0sn";
     const PUBLIC_KEY = "44pHflS6731bDq1Ls";
 
     const onSubmit = async (e) => {
