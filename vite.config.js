@@ -5,20 +5,36 @@ export default defineConfig({
     plugins: [
         react(),
         {
-            name: "inline-css",
+            name: "inline-all-css",
+            apply: "build",
+            enforce: "post",
             transformIndexHtml(html, ctx) {
-                if (!ctx || !ctx.bundle) return html;
-                // cherche le fichier CSS émis par Vite
-                const cssFile = Object.keys(ctx.bundle).find((f) =>
-                    f.endsWith(".css")
+                // En build seulement, on a accès au bundle Rollup
+                if (!ctx?.bundle) return html;
+
+                // Concatène tout le CSS émis par Vite
+                let css = "";
+                for (const [, asset] of Object.entries(ctx.bundle)) {
+                    if (
+                        asset.type === "asset" &&
+                        asset.fileName.endsWith(".css")
+                    ) {
+                        css += String(asset.source || "");
+                        // optionnel: on retire le fichier CSS du bundle
+                        delete ctx.bundle[asset.fileName];
+                    }
+                }
+                if (!css) return html;
+
+                // Supprime tous les <link rel="stylesheet"> et injecte le <style>
+                const cleaned = html.replace(
+                    /<link[^>]+rel=["']stylesheet["'][^>]*>/g,
+                    ""
                 );
-                if (!cssFile) return html;
-                const css = ctx.bundle[cssFile].source;
-                // remplace le <link ...> par un <style> inline
-                return html.replace(
-                    /<link[^>]+rel=["']stylesheet["'][^>]*>/,
-                    `<style>${css}</style>`
-                );
+                return {
+                    html: cleaned,
+                    tags: [{ tag: "style", children: css, injectTo: "head" }],
+                };
             },
         },
     ],
