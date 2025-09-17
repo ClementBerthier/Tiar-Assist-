@@ -7,34 +7,25 @@ export default function Contact() {
     const [status, setStatus] = useState("idle");
     const [errorMsg, setErrorMsg] = useState("");
 
-    // tes identifiants EmailJS en dur
-    const SERVICE_ID = "service_pi67s1e";
-    const TEMPLATE_ID = "template_tm2h0sn";
-    const PUBLIC_KEY = "44pHflS6731bDq1Ls";
-
     const onSubmit = async (e) => {
         e.preventDefault();
+
         setErrorMsg("");
-
-        // Honeypot anti-bot (correction: elements avec un "s")
-        const trap = formRef.current?.elements["website"];
-        if (trap && trap.value.trim() !== "") {
-            setStatus("error");
-            setErrorMsg("Echec de l'envoi.");
-            return;
-        }
-
         setStatus("sending");
 
         try {
-            await emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, formRef.current, {
-                publicKey: PUBLIC_KEY,
-            });
+            await emailjs.sendForm(
+                import.meta.env.SERVICE_ID,
+                import.meta.env.TEMPLATE_ID,
+                formRef.current,
+                { publicKey: import.meta.env.EMAILPUBLIC_KEY }
+            );
             setStatus("sent");
             formRef.current.reset();
         } catch (error) {
             console.error("EmailJS error:", error);
             setStatus("error");
+            // affiche un message générique (pour debug tu peux afficher error.message)
             setErrorMsg("Une erreur est survenue. Merci de réessayer.");
         }
     };
@@ -44,10 +35,9 @@ export default function Contact() {
             <div className="contact-bigcontainer">
                 <h2 className="contact-title">Nous Contacter</h2>
                 <p className="contact-description">
-                    Vous avez envie de travailler avec moi ?<br />
-                    Remplissez ce formulaire et je vous contacterai sous 24 h.
+                    Vous avez envie de travailler avec moi ?<br /> Remplissez ce
+                    formulaire et je vous contacterai sous 24 h.
                 </p>
-
                 <div className="contact-container">
                     <div className="contact-content">
                         <div className="content-information">
@@ -104,26 +94,12 @@ export default function Contact() {
                             </p>
                         </div>
                     </div>
-
                     <div className="contact-form">
                         <form
                             className="form"
                             ref={formRef}
                             onSubmit={onSubmit}
                         >
-                            {/* Honeypot anti-spam */}
-                            <input
-                                type="text"
-                                name="website"
-                                autoComplete="off"
-                                tabIndex="-1"
-                                style={{
-                                    position: "absolute",
-                                    left: "-9999px",
-                                }}
-                                aria-hidden="true"
-                            />
-
                             <div className="form-identity">
                                 <div className="form-group">
                                     <label htmlFor="firstname">
@@ -148,7 +124,6 @@ export default function Contact() {
                                     />
                                 </div>
                             </div>
-
                             <div className="form-group">
                                 <label htmlFor="email">
                                     Email<span className="star">*</span>
@@ -160,7 +135,6 @@ export default function Contact() {
                                     required
                                 />
                             </div>
-
                             <div className="form-group">
                                 <label htmlFor="message">
                                     Message<span className="star">*</span>
@@ -170,7 +144,7 @@ export default function Contact() {
                                     name="message"
                                     rows="4"
                                     required
-                                />
+                                ></textarea>
                             </div>
 
                             {/* feedback utilisateur */}
