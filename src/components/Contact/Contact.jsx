@@ -1,5 +1,41 @@
+import { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 import "./../../styles/Contact.css";
+
 export default function Contact() {
+    const formRef = useRef(null);
+    const [status, setStatus] = useState("sending");
+    const [errorMsg, setErrorMsg] = useState("");
+
+    const onSubmit = async (e) => {
+        e.preventDefault();
+
+        setErrorMsg("");
+
+        const trap = formRef.current?.element["website"];
+        if (trap && trap.value.trim() !== "") {
+            setStatus("error");
+            setErrorMsg("Echec de l'envoi.");
+            return;
+        }
+        setStatus("sending");
+
+        try {
+            await emailjs.sendForm(
+                import.meta.env.VITE_EMAILJS_SERVICE_ID,
+                import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+                formRef.current,
+                { publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY }
+            );
+            setStatus("sent");
+            formRef.current.reset();
+        } catch (error) {
+            console.error(error);
+            setStatus("error");
+            setErrorMsg("Une erreur est survenue. Merci de réessayer.");
+        }
+    };
+
     return (
         <div className="contact" id="contact">
             <div className="contact-bigcontainer">
@@ -65,7 +101,23 @@ export default function Contact() {
                         </div>
                     </div>
                     <div className="contact-form">
-                        <form className="form" action="">
+                        <form
+                            className="form"
+                            ref={formRef}
+                            onSubmit={onSubmit}
+                        >
+                            {/* Honeypot anti-spam : caché via CSS (display:none) */}
+                            <input
+                                type="text"
+                                name="website"
+                                autoComplete="off"
+                                tabIndex="-1"
+                                style={{
+                                    position: "absolute",
+                                    left: "-9999px",
+                                }}
+                                aria-hidden="true"
+                            />
                             <div className="form-identity">
                                 <div className="form-group">
                                     <label htmlFor="firstname">
