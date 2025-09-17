@@ -1,7 +1,6 @@
 import Header from "../Header/Header.jsx";
 import { useIsMobile } from "../../hook/useIsMobile.js";
 import "./../../styles/Home.css";
-
 export default function Home() {
     const isMobile = useIsMobile();
     return (
@@ -38,7 +37,7 @@ export default function Home() {
                     <div className="content-comment">
                         <div className="comment-picture">
                             <img
-                                src="/images/AvatarPersonnel.webP"
+                                src="/images/AvatarPersonnelMobile.webP"
                                 alt="Avatar stylisé de la fondatrice de Tiaré Assist'"
                             />
                         </div>
@@ -51,62 +50,127 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <img
-                className="home-filigrane"
-                src="/images/FiligraneTiare.webP
+            {!isMobile ? (
+                <>
+                    {" "}
+                    <img
+                        className="home-filigrane"
+                        src="/images/FiligraneTiare.webP
             "
-                alt=""
-                aria-hidden="true"
-            />
-            <img
-                className="home-filigrane2"
-                src="/images/FiligraneTiare.webP
+                        alt=""
+                        aria-hidden="true"
+                    />
+                    <img
+                        className="home-filigrane2"
+                        src="/images/FiligraneTiare.webP
             "
-                alt=""
-                aria-hidden="true"
-            />
-            <img
-                className="home-filigrane3"
-                src="/images/FiligraneTiare.webP
+                        alt=""
+                        aria-hidden="true"
+                    />
+                    <img
+                        className="home-filigrane3"
+                        src="/images/FiligraneTiare.webP
             "
-                alt=""
-                aria-hidden="true"
-            />
-            <img
-                className="home-filigrane4"
-                src="/images/FiligraneTiare.webP
+                        alt=""
+                        aria-hidden="true"
+                    />
+                    <img
+                        className="home-filigrane4"
+                        src="/images/FiligraneTiare.webP
             "
-                alt=""
-                aria-hidden="true"
-            />
-            <img
-                className="home-filigrane5"
-                src="/images/FiligraneTiare.webP
+                        alt=""
+                        aria-hidden="true"
+                    />
+                    <img
+                        className="home-filigrane5"
+                        src="/images/FiligraneTiare.webP
             "
-                alt=""
-                aria-hidden="true"
-            />
-            <img
-                className="home-filigrane6"
-                src="/images/FiligraneTiare.webP
+                        alt=""
+                        aria-hidden="true"
+                    />
+                    <img
+                        className="home-filigrane6"
+                        src="/images/FiligraneTiare.webP
             "
-                alt=""
-                aria-hidden="true"
-            />
-            <img
-                className="home-filigrane7"
-                src="/images/FiligraneTiare.webP
+                        alt=""
+                        aria-hidden="true"
+                    />
+                    <img
+                        className="home-filigrane7"
+                        src="/images/FiligraneTiare.webP
             "
-                alt=""
-                aria-hidden="true"
-            />
-            <img
-                className="home-filigrane8"
-                src="/images/FiligraneTiare.webP
+                        alt=""
+                        aria-hidden="true"
+                    />
+                    <img
+                        className="home-filigrane8"
+                        src="/images/FiligraneTiare.webP
             "
-                alt=""
-                aria-hidden="true"
-            />
+                        alt=""
+                        aria-hidden="true"
+                    />
+                </>
+            ) : (
+                <>
+                    {" "}
+                    <img
+                        className="home-filigrane"
+                        src="/images/FiligraneTiareMobile.webP
+            "
+                        alt=""
+                        aria-hidden="true"
+                    />
+                    <img
+                        className="home-filigrane2"
+                        src="/images/FiligraneTiareMobile.webP
+            "
+                        alt=""
+                        aria-hidden="true"
+                    />
+                    <img
+                        className="home-filigrane3"
+                        src="/images/FiligraneTiareMobile.webP
+            "
+                        alt=""
+                        aria-hidden="true"
+                    />
+                    <img
+                        className="home-filigrane4"
+                        src="/images/FiligraneTiareMobile.webP
+            "
+                        alt=""
+                        aria-hidden="true"
+                    />
+                    <img
+                        className="home-filigrane5"
+                        src="/images/FiligraneTiareMobile.webP
+            "
+                        alt=""
+                        aria-hidden="true"
+                    />
+                    <img
+                        className="home-filigrane6"
+                        src="/images/FiligraneTiareMobile.webP
+            "
+                        alt=""
+                        aria-hidden="true"
+                    />
+                    <img
+                        className="home-filigrane7"
+                        src="/images/FiligraneTiareMobile.webP
+            "
+                        alt=""
+                        aria-hidden="true"
+                    />
+                    <img
+                        className="home-filigrane8"
+                        src="/images/FiligraneTiareMobile.webP
+            "
+                        alt=""
+                        aria-hidden="true"
+                    />
+                </>
+            )}
         </>
     );
 }

@@ -1,11 +1,13 @@
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import "./../../styles/Contact.css";
+import { useIsMobile } from "../../hook/useIsMobile.js";
 
 export default function Contact() {
     const formRef = useRef(null);
     const [status, setStatus] = useState("idle");
     const [errorMsg, setErrorMsg] = useState("");
+    const isMobile = useIsMobile();
 
     const SERVICE_ID = "service_pi67s1e";
     const TEMPLATE_ID = "template_tm2h0sn";
@@ -84,11 +86,20 @@ export default function Contact() {
                             </div>
                         </div>
                         <div className="content-note">
-                            <img
-                                className="note-picture"
-                                src="/images/AvatarPersonnel.webP"
-                                alt="Avatar stylisé de la fondatrice de Tiaré Assist'"
-                            />
+                            {!isMobile ? (
+                                <img
+                                    className="note-picture"
+                                    src="/images/AvatarPersonnel.webP"
+                                    alt="Avatar stylisé de la fondatrice de Tiaré Assist'"
+                                />
+                            ) : (
+                                <img
+                                    className="note-picture"
+                                    src="/images/AvatarPersonnelMobile.webP"
+                                    alt="Avatar stylisé de la fondatrice de Tiaré Assist'"
+                                />
+                            )}
+
                             <p className="note-text">
                                 J'ai hâte que nous travaillions ensemble
                             </p>
