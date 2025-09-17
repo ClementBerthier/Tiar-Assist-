@@ -7,6 +7,10 @@ export default function Contact() {
     const [status, setStatus] = useState("idle");
     const [errorMsg, setErrorMsg] = useState("");
 
+    const SERVICE_ID = "service_pi67s1e";
+    const TEMPLATE_ID = "template_tm2h0sn";
+    const PUBLIC_KEY = "44pHflS6731bDq1Ls";
+
     const onSubmit = async (e) => {
         e.preventDefault();
 
@@ -14,18 +18,14 @@ export default function Contact() {
         setStatus("sending");
 
         try {
-            await emailjs.sendForm(
-                import.meta.env.SERVICE_ID,
-                import.meta.env.TEMPLATE_ID,
-                formRef.current,
-                { publicKey: import.meta.env.EMAILPUBLIC_KEY }
-            );
+            await emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, formRef.current, {
+                publicKey: PUBLIC_KEY,
+            });
             setStatus("sent");
             formRef.current.reset();
         } catch (error) {
             console.error("EmailJS error:", error);
             setStatus("error");
-            // affiche un message générique (pour debug tu peux afficher error.message)
             setErrorMsg("Une erreur est survenue. Merci de réessayer.");
         }
     };
