@@ -1,3 +1,10 @@
 {
-    "rewrites": [{ "source": "/(.*)", "destination": "/" }]
+    "rewrites": [{ "source": "/(.*)", "destination": "/" }],
+    "redirects": [
+        {
+            "source": "https://tiareassist.fr/:path*",
+            "destination": "https://www.tiareassist.fr/:path*",
+            "permanent": true
+        }
+    ]
 }
