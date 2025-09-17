@@ -22,10 +22,10 @@ export default function Contact() {
 
         try {
             await emailjs.sendForm(
-                import.meta.env.VITE_EMAILJS_SERVICE_ID,
-                import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+                import.meta.env.SERVICE_ID,
+                import.meta.env.TEMPLATE_ID,
                 formRef.current,
-                { publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY }
+                { publicKey: import.meta.env.EMAILPUBLIC_KEY }
             );
             setStatus("sent");
             formRef.current.reset();
