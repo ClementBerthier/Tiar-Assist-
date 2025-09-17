@@ -15,8 +15,21 @@
         <!-- Canonical -->
         <link rel="canonical" href="https://www.tiareassist.fr/" />
 
-        <!-- Favicon -->
-        <link rel="icon" href="/images/LogoTiare.webP" />
+        <!-- Favicon + icons (PNG/ICO mieux supportés que WebP pour les favicons) -->
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="/images/favicon-32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/images/favicon-16.png"
+        />
+        <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
+        <meta name="theme-color" content="#ffffff" />
 
         <!-- Open Graph -->
         <meta property="og:type" content="website" />
@@ -38,35 +51,50 @@
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
 
+        <!-- Preconnect pour Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+        <!-- Google Fonts en 1 SEUL appel, non-bloquant + display=swap -->
+        <!-- Garde seulement les familles/poids que tu utilises réellement -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+        <!-- Google Fonts fusionné, non-bloquant, avec TOUTES les variantes que tu avais -->
         <link
-            href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Meow+Script&display=swap"
             rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Meow+Script&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+            media="print"
+            onload="this.media='all'"
         />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Meow+Script&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-            rel="stylesheet"
-        />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Meow+Script&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-            rel="stylesheet"
-        />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Meow+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-            rel="stylesheet"
-        />
+        <noscript>
+            <link
+                rel="stylesheet"
+                href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Meow+Script&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+            />
+        </noscript>
+
+        <!-- (Option A) Rendre le CSS principal non-bloquant -->
+        <!-- Remplace /assets/index-XXXX.css par le chemin réel sorti par Vite en prod -->
+        <!-- Si tu laisses Vite injecter le <link>, utilise plutôt l'option B Critters ci-dessous -->
+        <!--
+  <link rel="preload" as="style" href="/assets/index-XXXX.css"
+        onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/index-XXXX.css"></noscript>
+  -->
+
+        <!-- Données structurées LocalBusiness -->
         <script type="application/ld+json">
             {
                 "@context": "https://schema.org",
                 "@type": "LocalBusiness",
                 "name": "Tiaré Assist'",
-                "image": "https://www.tiareassist.fr/images/preview.jpg",
                 "url": "https://www.tiareassist.fr/",
+                "image": "https://www.tiareassist.fr/images/preview.jpg",
                 "address": {
                     "@type": "PostalAddress",
                     "addressLocality": "Frouzins",
-                    "postalCode": "31203",
+                    "postalCode": "31270",
                     "addressCountry": "FR"
                 },
                 "areaServed": "FR",
