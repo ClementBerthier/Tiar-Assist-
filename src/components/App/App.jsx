@@ -7,14 +7,13 @@ import "../../styles/App.css";
 import Footer from "../Footer/Footer.jsx";
 
 function App() {
-    const Services = lazy(() => import("../Services/Services"));
     const Contact = lazy(() => import("../Contact/Contact"));
     const Footer = lazy(() => import("../Footer/Footer"));
     return (
         <>
             <Home />
+            <Services />
             <Suspense fallback={<div>Loading...</div>}>
-                <Services />
                 <Contact />
                 <Footer />
             </Suspense>
