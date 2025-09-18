@@ -24,7 +24,7 @@ export default function LazyWhenVisible({
 
         io.observe(el);
         return () => io.disconnect();
-    }, [shouldLoad]);
+    }, [rootMargin, shouldLoad]);
 
     return (
         <div ref={ref}>
