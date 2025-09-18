@@ -56,56 +56,72 @@ export default function Home() {
                     <img
                         className="home-filigrane"
                         src="/images/FiligraneTiare.webP
+    
             "
+                        fetchpriority="high"
                         alt=""
                         aria-hidden="true"
                     />
                     <img
                         className="home-filigrane2"
                         src="/images/FiligraneTiare.webP
+    
             "
+                        fetchpriority="high"
                         alt=""
                         aria-hidden="true"
                     />
                     <img
                         className="home-filigrane3"
                         src="/images/FiligraneTiare.webP
+    
             "
+                        fetchpriority="high"
                         alt=""
                         aria-hidden="true"
                     />
                     <img
                         className="home-filigrane4"
                         src="/images/FiligraneTiare.webP
+    
             "
+                        fetchpriority="high"
                         alt=""
                         aria-hidden="true"
                     />
                     <img
                         className="home-filigrane5"
                         src="/images/FiligraneTiare.webP
+    
             "
+                        fetchpriority="high"
                         alt=""
                         aria-hidden="true"
                     />
                     <img
                         className="home-filigrane6"
                         src="/images/FiligraneTiare.webP
+    
             "
+                        fetchpriority="high"
                         alt=""
                         aria-hidden="true"
                     />
                     <img
                         className="home-filigrane7"
                         src="/images/FiligraneTiare.webP
+    
             "
+                        fetchpriority="high"
                         alt=""
                         aria-hidden="true"
                     />
                     <img
                         className="home-filigrane8"
                         src="/images/FiligraneTiare.webP
+    
             "
+                        fetchpriority="high"
                         alt=""
                         aria-hidden="true"
                     />
@@ -116,56 +132,72 @@ export default function Home() {
                     <img
                         className="home-filigrane"
                         src="/images/FiligraneTiareMobile.webP
+    
             "
+                        fetchpriority="high"
                         alt=""
                         aria-hidden="true"
                     />
                     <img
                         className="home-filigrane2"
                         src="/images/FiligraneTiareMobile.webP
+    
             "
+                        fetchpriority="high"
                         alt=""
                         aria-hidden="true"
                     />
                     <img
                         className="home-filigrane3"
                         src="/images/FiligraneTiareMobile.webP
+    
             "
+                        fetchpriority="high"
                         alt=""
                         aria-hidden="true"
                     />
                     <img
                         className="home-filigrane4"
                         src="/images/FiligraneTiareMobile.webP
+    
             "
+                        fetchpriority="high"
                         alt=""
                         aria-hidden="true"
                     />
                     <img
                         className="home-filigrane5"
                         src="/images/FiligraneTiareMobile.webP
+    
             "
+                        fetchpriority="high"
                         alt=""
                         aria-hidden="true"
                     />
                     <img
                         className="home-filigrane6"
                         src="/images/FiligraneTiareMobile.webP
+    
             "
+                        fetchpriority="high"
                         alt=""
                         aria-hidden="true"
                     />
                     <img
                         className="home-filigrane7"
                         src="/images/FiligraneTiareMobile.webP
+    
             "
+                        fetchpriority="high"
                         alt=""
                         aria-hidden="true"
                     />
                     <img
                         className="home-filigrane8"
                         src="/images/FiligraneTiareMobile.webP
+    
             "
+                        fetchpriority="high"
                         alt=""
                         aria-hidden="true"
                     />
