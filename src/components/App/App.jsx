@@ -1,24 +1,22 @@
-import Home from "../Home/Home";
-import Services from "../Services/Services";
-import Contact from "../Contact/Contact";
-import { lazy, Suspense } from "react";
+import { lazy } from "react";
+import LazyWhenVisible from "../Utils/LazyWhenVisible";
 
-import "../../styles/App.css";
-import Footer from "../Footer/Footer.jsx";
+const Contact = lazy(() => import("../Contact/Contact"));
+const Footer = lazy(() => import("../Footer/Footer"));
 
-function App() {
-    const Contact = lazy(() => import("../Contact/Contact"));
-    const Footer = lazy(() => import("../Footer/Footer"));
+export default function App() {
     return (
         <>
             <Home />
             <Services />
-            <Suspense fallback={<div>Loading...</div>}>
-                <Contact />
-                <Footer />
-            </Suspense>
+            <LazyWhenVisible
+                fallback={<div style={{ minHeight: 300 }}>Chargement…</div>}
+                loader={() => <Contact />}
+            />
+            <LazyWhenVisible
+                fallback={<div style={{ minHeight: 200 }} />}
+                loader={() => <Footer />}
+            />
         </>
     );
 }
-
-export default App;
