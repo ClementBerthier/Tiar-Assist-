@@ -1,23 +1,28 @@
 import Home from "../Home/Home";
-import Services from "../Services/Services";
-import Contact from "../Contact/Contact";
-import { lazy, Suspense } from "react";
+import Services from "../Services/Services"; // si visible au-dessus du pli, NE PAS lazy-load
+import LazyWhenVisible from "../../utils/LazyWhenVisible.jsx";
 
-import Footer from "../Footer/Footer.jsx";
-
-function App() {
-    const Contact = lazy(() => import("../Contact/Contact"));
-    const Footer = lazy(() => import("../Footer/Footer"));
+export default function App() {
     return (
         <>
             <Home />
             <Services />
-            <Suspense fallback={<div>Loading...</div>}>
-                <Contact />
-                <Footer />
-            </Suspense>
+
+            {/* Contact seulement quand visible */}
+            <LazyWhenVisible
+                importFn={() => import("../Contact/Contact")} // <— import dynamique uniquement à l’intersection
+                fallback={<div style={{ minHeight: 320 }} aria-hidden="true" />}
+                rootMargin="0px" // pas de chargement anticipé
+                threshold={0.01}
+            />
+
+            {/* Footer encore plus tard */}
+            <LazyWhenVisible
+                importFn={() => import("../Footer/Footer")}
+                fallback={<div style={{ minHeight: 200 }} aria-hidden="true" />}
+                rootMargin="0px"
+                threshold={0.01}
+            />
         </>
     );
 }
-
-export default App;
