@@ -25,8 +25,8 @@ export default function Footer() {
                 >
                     <a href="/">Accueil</a>
                     <a href="/ML">Mentions légales</a>
-                    <a href="/CGU">Conditions générale d'utilisation</a>
-                    <a href="/CGV">Conditions générales de ventes</a>
+                    <a href="/CGU">Conditions générales d'utilisation</a>
+                    <a href="/CGV">Conditions générales de vente</a>
                     <a href="/PrivacyPolicy">Politique de confidentialité</a>
                 </div>
                 <div></div>
