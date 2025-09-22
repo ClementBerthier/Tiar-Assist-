@@ -44,7 +44,7 @@ export default function Contact() {
                     <div className="contact-content">
                         <div className="content-information">
                             <h3 className="information-title">
-                                Contactez moi directement
+                                Contactez-moi directement
                             </h3>
                             <div className="information-email">
                                 <div className="email-picture">

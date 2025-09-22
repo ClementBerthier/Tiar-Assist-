@@ -1,7 +1,7 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
-import { Routes, Route } from "react-router";
+import { Routes, Route } from "react-router-dom";
 import ML from "./components/LegalDocuments/ML.jsx";
 import CGU from "./components/LegalDocuments/CGU.jsx";
 import CGV from "./components/LegalDocuments/CGV.jsx";
