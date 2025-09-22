@@ -18,10 +18,11 @@ export default function ML() {
                             Tiaré Assist', entreprise individuelle gérée par
                             Madame Mandy Micheau, dont l'adresse professionnelle
                             est située au 12c boulevard de la Mediterranee 31270
-                            Frouzins, N° SIRET : XXXXXXXXXX, code NAF : 8211Z,
-                            Services administratifs combinés de bureau. Adresse
-                            électronique : tiareassist@gmail.com, numéro de
-                            téléphone : 06.45.58.95.76{" "}
+                            Frouzins, N° SIRET : ( en cours de création ), code
+                            NAF : 8211Z, Services administratifs combinés de
+                            bureau. Adresse électronique :
+                            tiareassist@gmail.com, numéro de téléphone :
+                            06.45.58.95.76{" "}
                         </p>
                     </div>
                     <div className="content-section">
@@ -47,8 +48,8 @@ export default function ML() {
                     </div>
                 </div>
                 <div className="legalMentions-otherMentions">
-                    <a href="/CGU">Conditions générale d'utilisation</a>
-                    <a href="/CGV">Conditions générales de ventes</a>
+                    <a href="/CGU">Conditions générales d'utilisation</a>
+                    <a href="/CGV">Conditions générales de vente</a>
                     <a href="/PrivacyPolicy">Politique de confidentialité</a>
                 </div>
             </div>

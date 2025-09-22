@@ -34,7 +34,7 @@ export default function CGV() {
                             personnelles est Madame Mandy Micheau, domiciliée au
                             12c boulevard de la Méditerranée, 31270 Frouzins.
                             Adresse de courrier électronique :
-                            tiareassist@gmail.com Numéro de téléphone :
+                            tiareassist@gmail.com, Numéro de téléphone :
                             06.45.58.95.76
                         </p>
                     </div>
@@ -53,7 +53,7 @@ export default function CGV() {
                     </div>
                     <div className="content-section">
                         <h2 className="section-title">
-                            Article 4 : Utilisations des données
+                            Article 4 : Utilisation des données
                         </h2>
                         <p className="section-text">
                             Les données collectées sont utilisées pour les

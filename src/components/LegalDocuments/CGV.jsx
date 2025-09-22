@@ -20,7 +20,7 @@ export default function CGV() {
                             individuelle <strong>TIARE ASSIST’</strong>,
                             représentée par <strong>Mandy MICHEAU</strong>{" "}
                             (Secrétaire indépendante) et de son{" "}
-                            <stong> Client </stong>, dans le cadre de{" "}
+                            <stong> Client</stong>, dans le cadre de{" "}
                             <span className="bold">
                                 missions de secrétariat dans les domaines
                                 administratif et social.
@@ -47,7 +47,7 @@ export default function CGV() {
                             Les prestations prévues à l’article 1 sont réalisées
                             dans les locaux de l’entreprise{" "}
                             <strong>TIARE ASSIST’</strong> (son domicile), en{" "}
-                            <span className="bold">télétravail</span> , ou dans
+                            <span className="bold">télétravail</span>, ou dans
                             ceux du <strong>Client sur site</strong>, sur le
                             matériel du <strong>Client</strong> après accord
                             entre les deux parties.
@@ -73,7 +73,7 @@ export default function CGV() {
                             en outre apposer leur cachet commercial. En cas de
                             confirmation de commande par courrier électronique,
                             une mention devra préciser l’adhésion pleine et
-                            entière du <strong>Client</strong> aux dites CGV,
+                            entière du <strong>Client</strong> auxdites CGV,
                             figurant en ligne à l’adresse :
                             https://tiareassist.vercel.app. À défaut de
                             réception de l’acceptation du devis et des CGV,
@@ -312,7 +312,7 @@ export default function CGV() {
                             (pornographie, racisme, incitation à la violence…).
                             Les textes, images et documents confiés à TIARE
                             ASSIST’ restent la propriété du{" "}
-                            <strong> Client</strong>, qui seul, assume les
+                            <strong> Client</strong>, qui seul assume les
                             conditions d’utilisation, notamment en ce qui
                             concerne les droits et éventuels copyrights.
                             <strong> TIARE ASSIST’ </strong> ne saurait être
@@ -342,7 +342,7 @@ export default function CGV() {
                 </div>
                 <div className="legalMentions-otherMentions">
                     <a href="/ML">Mentions Légales</a>
-                    <a href="/CGU">Conditions générale d'utilisation</a>
+                    <a href="/CGU">Conditions générales d'utilisation</a>
                     <a href="/PrivacyPolicy">Politique de confidentialité</a>
                 </div>
             </div>
