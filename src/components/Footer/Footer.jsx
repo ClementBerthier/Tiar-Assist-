@@ -32,8 +32,10 @@ export default function Footer() {
                 <div></div>
                 <div className="mobile-copyright">
                     <p className="copyright">
-                        Tiaré Assist' © 2025 - Designé et développé par Clément
-                        Berthier Développeur
+                        Tiaré Assist' © 2025 - Designé et développé par{" "}
+                        <a href="https://www.clementberthierdeveloppeur.fr/">
+                            Clément Berthier Développeur{" "}
+                        </a>
                     </p>
                 </div>
             </div>
