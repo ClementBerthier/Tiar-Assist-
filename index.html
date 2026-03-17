@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
     <head>
         <meta charset="UTF-8" />
@@ -9,7 +9,7 @@
         </title>
         <meta
             name="description"
-            content="Tiaré Assist' accompagne entreprises et particuliers : secrétariat, gestion administrative, rédaction, mise en page et aide aux démarches. Devis gratuit, réponse rapide."
+            content="Tiaré Assist' accompagne entreprises et particuliers de Toulouse et Frouzins: secrétariat, gestion administrative, rédaction, mise en page et aide aux démarches. Devis gratuit, réponse rapide."
         />
         <link rel="preconnect" href="https://www.tiareassist.fr" crossorigin />
         <link
@@ -25,13 +25,13 @@
         <!-- Favicon + icons (PNG/ICO mieux supportés que WebP pour les favicons) -->
         <link
             rel="icon"
-            type="image/png"
+            type="image/x-icon"
             sizes="32x32"
             href="/images/LogoTiareIcone.ico"
         />
         <link
             rel="icon"
-            type="image/png"
+            type="image/x-icon"
             sizes="16x16"
             href="/images/LogoTiareIcone.ico"
         />
@@ -67,17 +67,12 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-        <!-- Google Fonts en 1 SEUL appel, non-bloquant + display=swap -->
-        <!-- Garde seulement les familles/poids que tu utilises réellement -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
         <!-- Google Fonts fusionné, non-bloquant, avec TOUTES les variantes que tu avais -->
         <link
             rel="stylesheet"
             href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Meow+Script&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
             media="print"
-            onload="this.media='all'"
+            onload="this.media = 'all'"
         />
         <noscript>
             <link
@@ -104,6 +99,9 @@
                 "url": "https://www.tiareassist.fr/",
                 "image": "https://www.tiareassist.fr/images/LogoTiare.webP",
                 "logo": "https://www.tiareassist.fr/images/LogoTiare.webP",
+                "description": "Tiaré Assist', secrétariat indépendant basé à Frouzins (31270), propose des solutions administratives sur mesure pour les particuliers et les professionnels : gestion administrative, saisie et traitement de documents, assistance comptable, organisation et classement, rédaction de courriers et démarches administratives. Un accompagnement personnalisé et rigoureux pour simplifier votre quotidien.",
+                "telephone": "+33645589576",
+                "email": "tiareassist@gmail.com",
                 "address": {
                     "@type": "PostalAddress",
                     "addressLocality": "Frouzins",
@@ -111,7 +109,26 @@
                     "addressCountry": "FR"
                 },
                 "areaServed": "FR",
-                "priceRange": "€€"
+                "priceRange": "€€",
+                "openingHoursSpecification": [
+                    {
+                        "@type": "OpeningHoursSpecification",
+                        "dayOfWeek": [
+                            "Monday",
+                            "Tuesday",
+                            "Thursday",
+                            "Friday"
+                        ],
+                        "opens": "09:00",
+                        "closes": "19:00"
+                    },
+                    {
+                        "@type": "OpeningHoursSpecification",
+                        "dayOfWeek": ["Wednesday", "Saturday"],
+                        "opens": "09:00",
+                        "closes": "13:00"
+                    }
+                ]
             }
         </script>
     </head>

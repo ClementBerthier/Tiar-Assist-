@@ -1,0 +1,85 @@
+.notFound {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    padding: 2rem;
+    background-color: #f5d8b2;
+
+    .notFound-card {
+        text-align: center;
+        background: #fff;
+        border-radius: 30px;
+        box-shadow: 0 0.5rem 1rem rgba(38, 94, 66, 0.52);
+        padding: 3rem 2rem;
+        max-width: 500px;
+        width: 100%;
+    }
+
+    .notFound-code {
+        font-family: "Dancing Script", sans-serif;
+        font-size: 6rem;
+        font-weight: 700;
+        color: #265e42;
+        line-height: 1;
+        margin-bottom: 1rem;
+    }
+
+    .notFound-title {
+        font-family: "Dancing Script", sans-serif;
+        font-size: 1.8rem;
+        color: #333;
+        margin-bottom: 1rem;
+    }
+
+    .notFound-text {
+        font-family: "Montserrat", sans-serif;
+        font-size: 1rem;
+        color: #333;
+        margin-bottom: 2rem;
+        line-height: 1.6;
+    }
+
+    .notFound-link {
+        display: inline-block;
+        background-color: #265e42;
+        color: white;
+        font-family: "Lato", sans-serif;
+        font-size: 1.1rem;
+        text-decoration: none;
+        padding: 0.8rem 2rem;
+        border-radius: 30px;
+        box-shadow: 0 0.5rem 1rem rgba(38, 94, 66, 0.52);
+        transition: opacity 0.2s;
+
+        &:hover {
+            opacity: 0.85;
+        }
+    }
+}
+
+@media screen and (min-width: 850px) {
+    .notFound {
+        background: linear-gradient(#f5d8b2, #c1d373);
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .notFound {
+        .notFound-card {
+            padding: 4rem 3rem;
+        }
+
+        .notFound-code {
+            font-size: 8rem;
+        }
+
+        .notFound-title {
+            font-size: 2.2rem;
+        }
+
+        .notFound-text {
+            font-size: 1.2rem;
+        }
+    }
+}

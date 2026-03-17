@@ -3,6 +3,17 @@ import "./../../styles/Header.css";
 export default function Header() {
     return (
         <header className="header">
+            <div className="header-topbar">
+                <a className="topbar-phone" href="tel:+33645589576">
+                    <img
+                        className="topbar-icon"
+                        src="/images/phone.webP"
+                        alt=""
+                        aria-hidden="true"
+                    />
+                    06.45.58.95.76
+                </a>
+            </div>
             <div className="header-logo">
                 <img
                     className="logo-picture"
@@ -15,7 +26,8 @@ export default function Header() {
             </div>
             <div className="header-presentation">
                 <h1 className="presentation-title">
-                    Bienvenue chez Tiaré Assist'
+                    Secrétariat indépendant à Toulouse et Frouzins — Tiaré
+                    Assist
                 </h1>
                 <p className="presentation-text">
                     Après 20 ans dans l’administration et l’informatique, dont

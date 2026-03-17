@@ -6,7 +6,7 @@ export default function Home() {
     return (
         <>
             <Header />
-            <div className="home" id="accueil">
+            <section className="home" id="accueil">
                 <div className="home-picture">
                     {!isMobile ? (
                         <img
@@ -49,7 +49,7 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
             {!isMobile ? (
                 <>
                     {" "}

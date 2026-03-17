@@ -4,11 +4,19 @@ export default function Footer() {
     const [menuOpen, setMenuOpen] = useState(false);
 
     return (
-        <div className="footer">
+        <footer className="footer">
             <div className="footer-mobile">
                 <div
                     className={`mobile-banner ${menuOpen ? "" : "gradient"}`}
+                    role="button"
+                    tabIndex={0}
                     onClick={() => setMenuOpen(!menuOpen)}
+                    onKeyDown={(e) => {
+                        if (e.key === "Enter" || e.key === " ") {
+                            e.preventDefault();
+                            setMenuOpen(!menuOpen);
+                        }
+                    }}
                 >
                     <h2 className="banner-title">Infos pratiques</h2>
                     <img
@@ -29,10 +37,13 @@ export default function Footer() {
                     <a href="/CGV">Conditions générales de vente</a>
                     <a href="/PrivacyPolicy">Politique de confidentialité</a>
                 </div>
-                <div></div>
                 <div className="mobile-copyright">
                     <p className="copyright">
-                        Tiaré Assist' © 2025 - Designé et développé par{" "}
+                        Tiaré Assist' © 2025
+                        {new Date().getFullYear() > 2025
+                            ? `-${new Date().getFullYear()}`
+                            : ""}{" "}
+                        - Designé et développé par{" "}
                         <a href="https://www.clementberthierdeveloppeur.fr/">
                             Clément Berthier Développeur{" "}
                         </a>
@@ -81,18 +92,18 @@ export default function Footer() {
                             >
                                 tiareassist@gmail.com
                             </a>
-                            <a className="infos-link" href="tel:+33645589876">
-                                06.45.58.98.76
+                            <a className="infos-link" href="tel:+33645589576">
+                                06.45.58.95.76
                             </a>
                         </div>
-                        <div className="contact-socials">
+                        {/*   <div className="contact-socials">
                             <a className="socials-link" href="">
                                 <img className="link-picture" src="" alt="" />
                             </a>
                             <a className="socials-link" href="">
                                 <img className="link-picture" src="" alt="" />
                             </a>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
                 <div className="desktop-line">
@@ -100,7 +111,11 @@ export default function Footer() {
                 </div>
                 <div className="desktop-copyright">
                     <p className="copyright">
-                        Tiaré Assist' © 2025 - Designé et développé par{" "}
+                        Tiaré Assist' © 2025
+                        {new Date().getFullYear() > 2025
+                            ? `-${new Date().getFullYear()}`
+                            : ""}{" "}
+                        - Designé et développé par{" "}
                         <a href="https://www.clementberthierdeveloppeur.fr/">
                             Clément Berthier Développeur{" "}
                         </a>
@@ -108,6 +123,6 @@ export default function Footer() {
                     </p>
                 </div>
             </div>
-        </div>
+        </footer>
     );
 }

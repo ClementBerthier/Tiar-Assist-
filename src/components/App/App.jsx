@@ -7,12 +7,12 @@ import Footer from "../Footer/Footer.jsx";
 
 function App() {
     return (
-        <>
+        <main>
             <Home />
             <Services />
             <Contact />
             <Footer />
-        </>
+        </main>
     );
 }
 

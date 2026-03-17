@@ -9,10 +9,6 @@ export default function Contact() {
     const [errorMsg, setErrorMsg] = useState("");
     const isMobile = useIsMobile();
 
-    const SERVICE_ID = "service_pi67s1e";
-    const TEMPLATE_ID = "template_tm2h0sn";
-    const PUBLIC_KEY = "44pHflS6731bDq1Ls";
-
     const onSubmit = async (e) => {
         e.preventDefault();
 
@@ -20,9 +16,14 @@ export default function Contact() {
         setStatus("sending");
 
         try {
-            await emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, formRef.current, {
-                publicKey: PUBLIC_KEY,
-            });
+            await emailjs.sendForm(
+                import.meta.env.VITE_EMAILJS_SERVICE_ID,
+                import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+                formRef.current,
+                {
+                    publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+                },
+            );
             setStatus("sent");
             formRef.current.reset();
         } catch (error) {
@@ -33,7 +34,7 @@ export default function Contact() {
     };
 
     return (
-        <div className="contact" id="contact">
+        <section className="contact" id="contact">
             <div className="contact-bigcontainer">
                 <h2 className="contact-title">Nous Contacter</h2>
                 <p className="contact-description">
@@ -78,7 +79,7 @@ export default function Contact() {
                                     <p className="content-text">Téléphone</p>
                                     <a
                                         className="content-link"
-                                        href="tel:+33645589876"
+                                        href="tel:+33645589576"
                                     >
                                         06.45.58.95.76
                                     </a>
@@ -193,6 +194,6 @@ export default function Contact() {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 }

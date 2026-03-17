@@ -6,6 +6,7 @@ import ML from "./components/LegalDocuments/ML.jsx";
 import CGU from "./components/LegalDocuments/CGU.jsx";
 import CGV from "./components/LegalDocuments/CGV.jsx";
 import PrivacyPolicy from "./components/LegalDocuments/PrivacyPolicy.jsx";
+import NotFound from "./components/NotFound/NotFound.jsx";
 import "./styles/Reset.css";
 import App from "./components/App/App.jsx";
 
@@ -18,6 +19,7 @@ createRoot(document.getElementById("root")).render(
                 <Route path="/CGU" element={<CGU />} />
                 <Route path="/CGV" element={<CGV />} />
                 <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
+                <Route path="*" element={<NotFound />} />
             </Routes>
         </BrowserRouter>
     </StrictMode>

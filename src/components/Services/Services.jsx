@@ -41,7 +41,7 @@ export default function Services() {
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     return (
-        <div className="services" id="services">
+        <section className="services" id="services">
             <div className="services-container">
                 <h2 className="services-title">Nos Services</h2>
                 <p className="services-description">
@@ -105,6 +105,6 @@ export default function Services() {
                     onClose={() => setIsModalOpen(false)}
                 />
             </div>
-        </div>
+        </section>
     );
 }
