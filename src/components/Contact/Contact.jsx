@@ -8,7 +8,7 @@ export default function Contact() {
     const [status, setStatus] = useState("idle");
     const [errorMsg, setErrorMsg] = useState("");
     const isMobile = useIsMobile();
-    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+    const publicKey = "44pHflS6731bDq1Ls";
 
     const onSubmit = async (e) => {
         e.preventDefault();
