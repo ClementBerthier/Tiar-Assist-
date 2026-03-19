@@ -5,11 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         <title>
-            Tiaré Assist' | Secrétariat indépendant & solutions administratives
+            Tiaré Assist' | Secrétariat indépendant à Toulouse et Frouzins
         </title>
         <meta
             name="description"
-            content="Tiaré Assist' accompagne entreprises et particuliers de Toulouse et Frouzins: secrétariat, gestion administrative, rédaction, mise en page et aide aux démarches. Devis gratuit, réponse rapide."
+            content="Secrétariat indépendant à Toulouse et Frouzins (31270). Tiaré Assist' : gestion administrative, rédaction, saisie de données, transcription audio et aide aux démarches pour entreprises et particuliers. Devis gratuit."
         />
         <link rel="preconnect" href="https://www.tiareassist.fr" crossorigin />
         <link
@@ -18,9 +18,6 @@
             href="/images/LogoTiare.webP"
             fetchpriority="high"
         />
-
-        <!-- Canonical -->
-        <link rel="canonical" href="https://www.tiareassist.fr/" />
 
         <!-- Favicon + icons (PNG/ICO mieux supportés que WebP pour les favicons) -->
         <link
@@ -38,28 +35,37 @@
         <link rel="apple-touch-icon" href="/images/LogoTiareIcone.ico" />
         <meta name="theme-color" content="#ffffff" />
 
-        <!-- Open Graph -->
+        <!-- Open Graph (valeurs par défaut, surchargées par react-helmet-async) -->
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Tiaré Assist'" />
         <meta property="og:locale" content="fr_FR" />
         <meta
-            property="og:title"
-            content="Tiaré Assist' | Secrétariat indépendant"
-        />
-        <meta
-            property="og:description"
-            content="Services de secrétariat et assistance administrative sur mesure. Contactez-nous pour un accompagnement personnalisé."
-        />
-        <meta property="og:url" content="https://www.tiareassist.fr/" />
-        <meta
             property="og:image"
             content="https://www.tiareassist.fr/images/Tiare-Assit'Facebook.webP"
         />
-        <!-- fichier réel -->
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta
             property="og:image:alt"
+            content="Tiaré Assist' - Secrétariat indépendant"
+        />
+
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+            name="twitter:title"
+            content="Tiaré Assist' | Secrétariat indépendant à Toulouse et Frouzins"
+        />
+        <meta
+            name="twitter:description"
+            content="Secrétariat indépendant à Toulouse et Frouzins. Gestion administrative, rédaction, saisie de données et aide aux démarches. Formules sur mesure dès 50€/h. Devis gratuit."
+        />
+        <meta
+            name="twitter:image"
+            content="https://www.tiareassist.fr/images/Tiare-Assit'Facebook.webP"
+        />
+        <meta
+            name="twitter:image:alt"
             content="Tiaré Assist' - Secrétariat indépendant"
         />
 
@@ -90,26 +96,100 @@
   <noscript><link rel="stylesheet" href="/assets/index-XXXX.css"></noscript>
   -->
 
+        <!-- Meta tags SEO local -->
+        <meta name="geo.region" content="FR-OCC" />
+        <meta name="geo.placename" content="Frouzins, Toulouse" />
+        <meta name="geo.position" content="43.5156;1.3217" />
+        <meta name="ICBM" content="43.5156, 1.3217" />
+
         <!-- Données structurées LocalBusiness -->
         <script type="application/ld+json">
             {
                 "@context": "https://schema.org",
                 "@type": "LocalBusiness",
+                "@id": "https://www.tiareassist.fr/#business",
                 "name": "Tiaré Assist'",
+                "alternateName": "Tiare Assist",
                 "url": "https://www.tiareassist.fr/",
                 "image": "https://www.tiareassist.fr/images/LogoTiare.webP",
                 "logo": "https://www.tiareassist.fr/images/LogoTiare.webP",
                 "description": "Tiaré Assist', secrétariat indépendant basé à Frouzins (31270), propose des solutions administratives sur mesure pour les particuliers et les professionnels : gestion administrative, saisie et traitement de documents, assistance comptable, organisation et classement, rédaction de courriers et démarches administratives. Un accompagnement personnalisé et rigoureux pour simplifier votre quotidien.",
+                "founder": {
+                    "@type": "Person",
+                    "name": "Mandy Micheau",
+                    "jobTitle": "Secrétaire indépendante"
+                },
                 "telephone": "+33645589576",
                 "email": "tiareassist@gmail.com",
                 "address": {
                     "@type": "PostalAddress",
                     "addressLocality": "Frouzins",
+                    "addressRegion": "Occitanie",
                     "postalCode": "31270",
                     "addressCountry": "FR"
                 },
-                "areaServed": "FR",
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": 43.5156,
+                    "longitude": 1.3217
+                },
+                "areaServed": [
+                    {
+                        "@type": "City",
+                        "name": "Toulouse"
+                    },
+                    {
+                        "@type": "City",
+                        "name": "Frouzins"
+                    },
+                    {
+                        "@type": "AdministrativeArea",
+                        "name": "Haute-Garonne"
+                    }
+                ],
                 "priceRange": "€€",
+                "currenciesAccepted": "EUR",
+                "paymentAccepted": "Virement, Chèque",
+                "hasOfferCatalog": {
+                    "@type": "OfferCatalog",
+                    "name": "Services de secrétariat",
+                    "itemListElement": [
+                        {
+                            "@type": "Offer",
+                            "name": "Formule Frangipanier (sur mesure)",
+                            "description": "Tâches administratives occasionnelles ou récurrentes : impression, rédaction de mails, archivage, gestion du quotidien.",
+                            "price": "50",
+                            "priceCurrency": "EUR",
+                            "unitText": "par heure HT"
+                        },
+                        {
+                            "@type": "Offer",
+                            "name": "Formule Hibiscus",
+                            "description": "Remplacement temporaire d'une à deux semaines : gestion de l'essentiel rapidement sans passer par l'intérim.",
+                            "price": "400",
+                            "priceCurrency": "EUR",
+                            "unitText": "par semaine HT"
+                        },
+                        {
+                            "@type": "Offer",
+                            "name": "Formule Tiaré",
+                            "description": "Gestion administrative quotidienne sur un mois ou plus : appels, mails, maintien de l'ordre administratif.",
+                            "price": "1200",
+                            "priceCurrency": "EUR",
+                            "unitText": "par mois HT"
+                        }
+                    ]
+                },
+                "knowsAbout": [
+                    "Secrétariat indépendant",
+                    "Gestion administrative",
+                    "Rédaction de documents",
+                    "Saisie de données",
+                    "Transcription audio",
+                    "Gestion commerciale",
+                    "Assistance comptable",
+                    "Organisation et classement"
+                ],
                 "openingHoursSpecification": [
                     {
                         "@type": "OpeningHoursSpecification",

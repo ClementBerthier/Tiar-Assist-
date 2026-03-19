@@ -11,12 +11,12 @@ export default function Home() {
                     {!isMobile ? (
                         <img
                             src="/images/DesktopHome.webP"
-                            alt="Environnement de travail sobre et élégant illustrant les services de secrétariat"
+                            alt="Bureau de secrétariat indépendant Tiaré Assist' à Toulouse — espace de travail professionnel"
                         />
                     ) : (
                         <img
                             src="/images/DesktopHomeMobile.webP"
-                            alt="Environnement de travail sobre et élégant illustrant les services de secrétariat"
+                            alt="Bureau de secrétariat indépendant Tiaré Assist' à Toulouse — espace de travail professionnel"
                         />
                     )}
                 </div>
@@ -38,7 +38,7 @@ export default function Home() {
                         <div className="comment-picture">
                             <img
                                 src="/images/AvatarPersonnelMobile.webP"
-                                alt="Avatar stylisé de la fondatrice de Tiaré Assist'"
+                                alt="Mandy Micheau, fondatrice de Tiaré Assist', secrétaire indépendante à Toulouse"
                             />
                         </div>
                         <div className="comment-text">
@@ -58,7 +58,7 @@ export default function Home() {
                         src="/images/FiligraneTiare.webP
     
             "
-                        fetchpriority="high"
+                        loading="lazy"
                         alt=""
                         aria-hidden="true"
                     />
@@ -67,7 +67,7 @@ export default function Home() {
                         src="/images/FiligraneTiare.webP
     
             "
-                        fetchpriority="high"
+                        loading="lazy"
                         alt=""
                         aria-hidden="true"
                     />
@@ -76,7 +76,7 @@ export default function Home() {
                         src="/images/FiligraneTiare.webP
     
             "
-                        fetchpriority="high"
+                        loading="lazy"
                         alt=""
                         aria-hidden="true"
                     />
@@ -85,7 +85,7 @@ export default function Home() {
                         src="/images/FiligraneTiare.webP
     
             "
-                        fetchpriority="high"
+                        loading="lazy"
                         alt=""
                         aria-hidden="true"
                     />
@@ -94,7 +94,7 @@ export default function Home() {
                         src="/images/FiligraneTiare.webP
     
             "
-                        fetchpriority="high"
+                        loading="lazy"
                         alt=""
                         aria-hidden="true"
                     />
@@ -103,7 +103,7 @@ export default function Home() {
                         src="/images/FiligraneTiare.webP
     
             "
-                        fetchpriority="high"
+                        loading="lazy"
                         alt=""
                         aria-hidden="true"
                     />
@@ -112,7 +112,7 @@ export default function Home() {
                         src="/images/FiligraneTiare.webP
     
             "
-                        fetchpriority="high"
+                        loading="lazy"
                         alt=""
                         aria-hidden="true"
                     />
@@ -121,7 +121,7 @@ export default function Home() {
                         src="/images/FiligraneTiare.webP
     
             "
-                        fetchpriority="high"
+                        loading="lazy"
                         alt=""
                         aria-hidden="true"
                     />
@@ -134,7 +134,7 @@ export default function Home() {
                         src="/images/FiligraneTiareMobile.webP
     
             "
-                        fetchpriority="high"
+                        loading="lazy"
                         alt=""
                         aria-hidden="true"
                     />
@@ -143,7 +143,7 @@ export default function Home() {
                         src="/images/FiligraneTiareMobile.webP
     
             "
-                        fetchpriority="high"
+                        loading="lazy"
                         alt=""
                         aria-hidden="true"
                     />
@@ -152,7 +152,7 @@ export default function Home() {
                         src="/images/FiligraneTiareMobile.webP
     
             "
-                        fetchpriority="high"
+                        loading="lazy"
                         alt=""
                         aria-hidden="true"
                     />
@@ -161,7 +161,7 @@ export default function Home() {
                         src="/images/FiligraneTiareMobile.webP
     
             "
-                        fetchpriority="high"
+                        loading="lazy"
                         alt=""
                         aria-hidden="true"
                     />
@@ -170,7 +170,7 @@ export default function Home() {
                         src="/images/FiligraneTiareMobile.webP
     
             "
-                        fetchpriority="high"
+                        loading="lazy"
                         alt=""
                         aria-hidden="true"
                     />
@@ -179,7 +179,7 @@ export default function Home() {
                         src="/images/FiligraneTiareMobile.webP
     
             "
-                        fetchpriority="high"
+                        loading="lazy"
                         alt=""
                         aria-hidden="true"
                     />
@@ -188,7 +188,7 @@ export default function Home() {
                         src="/images/FiligraneTiareMobile.webP
     
             "
-                        fetchpriority="high"
+                        loading="lazy"
                         alt=""
                         aria-hidden="true"
                     />
@@ -197,7 +197,7 @@ export default function Home() {
                         src="/images/FiligraneTiareMobile.webP
     
             "
-                        fetchpriority="high"
+                        loading="lazy"
                         alt=""
                         aria-hidden="true"
                     />

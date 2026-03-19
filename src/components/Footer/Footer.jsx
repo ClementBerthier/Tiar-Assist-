@@ -44,7 +44,7 @@ export default function Footer() {
                             ? `-${new Date().getFullYear()}`
                             : ""}{" "}
                         - Designé et développé par{" "}
-                        <a href="https://www.clementberthierdeveloppeur.fr/">
+                        <a href="https://www.clementberthierdeveloppeur.fr/" rel="noopener noreferrer" target="_blank">
                             Clément Berthier Développeur{" "}
                         </a>
                     </p>
@@ -116,7 +116,7 @@ export default function Footer() {
                             ? `-${new Date().getFullYear()}`
                             : ""}{" "}
                         - Designé et développé par{" "}
-                        <a href="https://www.clementberthierdeveloppeur.fr/">
+                        <a href="https://www.clementberthierdeveloppeur.fr/" rel="noopener noreferrer" target="_blank">
                             Clément Berthier Développeur{" "}
                         </a>
                         - <a href="/ML">Mentions légales</a>

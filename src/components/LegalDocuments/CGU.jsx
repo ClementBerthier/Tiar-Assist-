@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import HeaderMention from "../Header/HeaderMention.jsx";
 import Footer from "../Footer/Footer.jsx";
 import "./../../styles/LegalDocuments.css";
@@ -5,6 +6,10 @@ import "./../../styles/LegalDocuments.css";
 export default function CGU() {
     return (
         <>
+            <Helmet>
+                <title>Conditions Générales d'Utilisation | Tiaré Assist'</title>
+                <meta name="robots" content="noindex, nofollow" />
+            </Helmet>
             <HeaderMention />
             <div className="legalMentions">
                 <h1 className="legalMentions-title">

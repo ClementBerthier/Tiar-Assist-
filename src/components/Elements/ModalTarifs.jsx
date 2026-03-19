@@ -13,7 +13,8 @@ export default function ModalTarifs({ isOpen, onClose }) {
                 <img
                     className="modal-picture"
                     src="/images/Priceboard.webP"
-                    alt="Tableau détaillant les différents prix étant hors formules"
+                    alt="Grille tarifaire détaillée des prestations de secrétariat Tiaré Assist' hors formules"
+                    loading="lazy"
                 />
             </div>
         </div>

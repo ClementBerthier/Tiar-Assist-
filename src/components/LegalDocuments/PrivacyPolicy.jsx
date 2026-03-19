@@ -1,10 +1,15 @@
+import { Helmet } from "react-helmet-async";
 import HeaderMention from "../Header/HeaderMention.jsx";
 import Footer from "../Footer/Footer.jsx";
 import "./../../styles/LegalDocuments.css";
 
-export default function CGV() {
+export default function PrivacyPolicy() {
     return (
         <>
+            <Helmet>
+                <title>Politique de Confidentialité | Tiaré Assist'</title>
+                <meta name="robots" content="noindex, nofollow" />
+            </Helmet>
             <HeaderMention />
             <div className="legalMentions">
                 <h1 className="legalMentions-title">

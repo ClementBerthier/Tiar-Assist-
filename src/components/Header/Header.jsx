@@ -27,7 +27,7 @@ export default function Header() {
             <div className="header-presentation">
                 <h1 className="presentation-title">
                     Secrétariat indépendant à Toulouse et Frouzins — Tiaré
-                    Assist
+                    Assist'
                 </h1>
                 <p className="presentation-text">
                     Après 20 ans dans l’administration et l’informatique, dont

@@ -59,6 +59,7 @@ export default function Services() {
                                     src={service.picture}
                                     alt=""
                                     aria-hidden="true"
+                                    loading="lazy"
                                 />
                             ) : (
                                 <img
@@ -66,6 +67,7 @@ export default function Services() {
                                     src={service.pictureMobile}
                                     alt=""
                                     aria-hidden="true"
+                                    loading="lazy"
                                 />
                             )}
 

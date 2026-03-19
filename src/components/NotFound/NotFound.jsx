@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import HeaderMention from "../Header/HeaderMention.jsx";
 import Footer from "../Footer/Footer.jsx";
 import "./../../styles/NotFound.css";
@@ -5,6 +6,10 @@ import "./../../styles/NotFound.css";
 export default function NotFound() {
     return (
         <>
+            <Helmet>
+                <title>Page introuvable | Tiaré Assist'</title>
+                <meta name="robots" content="noindex, nofollow" />
+            </Helmet>
             <HeaderMention />
             <div className="notFound">
                 <div className="notFound-card">

@@ -92,13 +92,15 @@ export default function Contact() {
                                 <img
                                     className="note-picture"
                                     src="/images/AvatarPersonnel.webP"
-                                    alt="Avatar stylisé de la fondatrice de Tiaré Assist'"
+                                    alt="Mandy Micheau, fondatrice de Tiaré Assist', secrétaire indépendante à Toulouse"
+                                    loading="lazy"
                                 />
                             ) : (
                                 <img
                                     className="note-picture"
                                     src="/images/AvatarPersonnelMobile.webP"
-                                    alt="Avatar stylisé de la fondatrice de Tiaré Assist'"
+                                    alt="Mandy Micheau, fondatrice de Tiaré Assist', secrétaire indépendante à Toulouse"
+                                    loading="lazy"
                                 />
                             )}
 
