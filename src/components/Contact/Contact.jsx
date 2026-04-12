@@ -98,7 +98,7 @@ export default function Contact() {
                             ) : (
                                 <img
                                     className="note-picture"
-                                    src="/images/AvatarPersonnelMobile.webP"
+                                    src="/images/AvatarPersonnel.webP"
                                     alt="Mandy Micheau, fondatrice de Tiaré Assist', secrétaire indépendante à Toulouse"
                                     loading="lazy"
                                 />

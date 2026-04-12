@@ -37,7 +37,7 @@ export default function Home() {
                     <div className="content-comment">
                         <div className="comment-picture">
                             <img
-                                src="/images/AvatarPersonnelMobile.webP"
+                                src="/images/AvatarPersonnel.webP"
                                 alt="Mandy Micheau, fondatrice de Tiaré Assist', secrétaire indépendante à Toulouse"
                             />
                         </div>
