@@ -106,7 +106,7 @@
         <script type="application/ld+json">
             {
                 "@context": "https://schema.org",
-                "@type": "LocalBusiness",
+                "@type": ["ProfessionalService", "LocalBusiness"],
                 "@id": "https://www.tiareassist.fr/#business",
                 "name": "Tiaré Assist'",
                 "alternateName": "Tiare Assist",
@@ -143,11 +143,27 @@
                         "name": "Frouzins"
                     },
                     {
+                        "@type": "City",
+                        "name": "Cugnaux"
+                    },
+                    {
+                        "@type": "City",
+                        "name": "Villeneuve-Tolosane"
+                    },
+                    {
+                        "@type": "City",
+                        "name": "Muret"
+                    },
+                    {
+                        "@type": "City",
+                        "name": "Seysses"
+                    },
+                    {
                         "@type": "AdministrativeArea",
                         "name": "Haute-Garonne"
                     }
                 ],
-                "priceRange": "€€",
+                "priceRange": "50€ - 1200€",
                 "currenciesAccepted": "EUR",
                 "paymentAccepted": "Virement, Chèque",
                 "hasOfferCatalog": {
@@ -158,25 +174,52 @@
                             "@type": "Offer",
                             "name": "Formule Frangipanier (sur mesure)",
                             "description": "Tâches administratives occasionnelles ou récurrentes : impression, rédaction de mails, archivage, gestion du quotidien.",
-                            "price": "50",
-                            "priceCurrency": "EUR",
-                            "unitText": "par heure HT"
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Tâches administratives à la carte",
+                                "serviceType": "Secrétariat indépendant"
+                            },
+                            "priceSpecification": {
+                                "@type": "UnitPriceSpecification",
+                                "price": 50,
+                                "priceCurrency": "EUR",
+                                "unitCode": "HUR",
+                                "valueAddedTaxIncluded": false
+                            }
                         },
                         {
                             "@type": "Offer",
                             "name": "Formule Hibiscus",
                             "description": "Remplacement temporaire d'une à deux semaines : gestion de l'essentiel rapidement sans passer par l'intérim.",
-                            "price": "400",
-                            "priceCurrency": "EUR",
-                            "unitText": "par semaine HT"
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Remplacement temporaire d'une à deux semaines",
+                                "serviceType": "Secrétariat indépendant"
+                            },
+                            "priceSpecification": {
+                                "@type": "UnitPriceSpecification",
+                                "price": 400,
+                                "priceCurrency": "EUR",
+                                "unitCode": "WEE",
+                                "valueAddedTaxIncluded": false
+                            }
                         },
                         {
                             "@type": "Offer",
                             "name": "Formule Tiaré",
                             "description": "Gestion administrative quotidienne sur un mois ou plus : appels, mails, maintien de l'ordre administratif.",
-                            "price": "1200",
-                            "priceCurrency": "EUR",
-                            "unitText": "par mois HT"
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Gestion administrative mensuelle",
+                                "serviceType": "Secrétariat indépendant"
+                            },
+                            "priceSpecification": {
+                                "@type": "UnitPriceSpecification",
+                                "price": 1200,
+                                "priceCurrency": "EUR",
+                                "unitCode": "MON",
+                                "valueAddedTaxIncluded": false
+                            }
                         }
                     ]
                 },
@@ -209,6 +252,21 @@
                         "closes": "13:00"
                     }
                 ]
+            }
+        </script>
+
+        <!-- Données structurées WebSite (active la sitelinks searchbox Google) -->
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "WebSite",
+                "@id": "https://www.tiareassist.fr/#website",
+                "url": "https://www.tiareassist.fr/",
+                "name": "Tiaré Assist'",
+                "inLanguage": "fr-FR",
+                "publisher": {
+                    "@id": "https://www.tiareassist.fr/#business"
+                }
             }
         </script>
     </head>
