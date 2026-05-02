@@ -2,17 +2,28 @@ import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import "./../../styles/Contact.css";
 import { useIsMobile } from "../../hook/useIsMobile.js";
+import ConfirmModal from "../Elements/ConfirmModal.jsx";
 
 export default function Contact() {
     const formRef = useRef(null);
     const [status, setStatus] = useState("idle");
     const [errorMsg, setErrorMsg] = useState("");
+    const [showConfirm, setShowConfirm] = useState(false);
     const isMobile = useIsMobile();
 
     const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
-    const onSubmit = async (e) => {
-        e.preventDefault();
 
+    const onSubmit = (e) => {
+        e.preventDefault();
+        setShowConfirm(true);
+    };
+
+    const handleCancel = () => {
+        setShowConfirm(false);
+    };
+
+    const handleConfirm = async () => {
+        setShowConfirm(false);
         setErrorMsg("");
         setStatus("sending");
 
@@ -197,6 +208,15 @@ export default function Contact() {
                     </div>
                 </div>
             </div>
+            <ConfirmModal
+                isOpen={showConfirm}
+                onConfirm={handleConfirm}
+                onCancel={handleCancel}
+                title="Confirmer l'envoi"
+                message="En soumettant ce formulaire, vous acceptez que vos données soient traitées conformément à notre politique de confidentialité."
+                confirmLabel="Valider"
+                cancelLabel="Refuser"
+            />
         </section>
     );
 }

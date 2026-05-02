@@ -96,10 +96,11 @@ export default function PrivacyPolicy() {
                             Article 7 : Durée de conservation des données
                         </h2>
                         <p className="section-text">
-                            Nous conservons vos données personnelles uniquement
-                            le temps nécessaire pour les finalités pour
-                            lesquelles elles ont été collectées, conformément
-                            aux exigences légales.
+                            Nous conservons vos données personnelles pour la
+                            durée du contrat ou de la prestation souscrite. Pour
+                            les simples demandes de contact, les données sont
+                            supprimées dans un délai de 12 mois après le dernier
+                            échange.
                         </p>
                     </div>
                     <div className="content-section">
