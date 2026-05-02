@@ -50,6 +50,11 @@ export default function Header() {
                         </a>
                     </li>
                     <li className="list-item">
+                        <a className="item-link" href="#zone">
+                            Zone
+                        </a>
+                    </li>
+                    <li className="list-item">
                         <a className="item-link" href="#contact">
                             Contact
                         </a>

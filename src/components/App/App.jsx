@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import Home from "../Home/Home";
 import Services from "../Services/Services";
+import AreaServed from "../AreaServed/AreaServed";
 import Contact from "../Contact/Contact";
 
 import "../../styles/App.css";
@@ -37,6 +38,7 @@ function App() {
             </Helmet>
             <Home />
             <Services />
+            <AreaServed />
             <Contact />
             <Footer />
         </main>

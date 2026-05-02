@@ -1,0 +1,238 @@
+.area-served {
+    background-color: #f5d8b2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    scroll-margin-top: 80px;
+    padding-bottom: 3rem;
+
+    .area-container {
+        z-index: 1;
+        width: 85%;
+        max-width: 1200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #faf0e5;
+        border-radius: 30px;
+        padding: 1rem 1rem 2rem 1rem;
+
+        .area-title {
+            margin-top: 2rem;
+            text-align: center;
+            font-size: 1.8rem;
+            font-weight: bold;
+            font-family: "Lato", sans-serif;
+            margin-bottom: 1rem;
+        }
+
+        .area-description {
+            text-align: center;
+            font-size: 1.1rem;
+            color: #333;
+            padding: 0 1rem;
+            margin-bottom: 2rem;
+            font-family: "Montserrat", sans-serif;
+            line-height: 1.5;
+        }
+
+        .area-map-wrapper {
+            width: 100%;
+            max-width: 900px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 0.5rem 1rem rgba(38, 94, 66, 0.52);
+            margin-bottom: 2rem;
+
+            .area-map {
+                height: 360px;
+                width: 100%;
+                z-index: 0;
+            }
+        }
+
+        .area-cities {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 2rem 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.6rem;
+            max-width: 800px;
+
+            .city-tag {
+                display: inline-flex;
+                align-items: baseline;
+                gap: 0.4rem;
+                background-color: #ffffff;
+                border: 1px solid rgba(38, 94, 66, 0.25);
+                border-radius: 999px;
+                padding: 0.4rem 0.9rem;
+                font-family: "Montserrat", sans-serif;
+                font-size: 0.9rem;
+                box-shadow: 0 0.2rem 0.4rem rgba(38, 94, 66, 0.15);
+                cursor: pointer;
+                transition:
+                    background-color 0.2s ease,
+                    border-color 0.2s ease,
+                    transform 0.2s ease,
+                    box-shadow 0.2s ease;
+
+                .tag-name {
+                    color: #222;
+                    font-weight: 600;
+                    transition: color 0.2s ease;
+                }
+
+                .tag-postal {
+                    color: #777;
+                    font-size: 0.8rem;
+                    transition: color 0.2s ease;
+                }
+
+                &:hover,
+                &:focus-visible {
+                    transform: translateY(-2px);
+                    box-shadow: 0 0.35rem 0.7rem rgba(38, 94, 66, 0.3);
+                    border-color: rgba(38, 94, 66, 0.5);
+                    outline: none;
+                }
+
+                &.home {
+                    background-color: #265e42;
+                    border-color: #265e42;
+
+                    .tag-name {
+                        color: #ffffff;
+                    }
+
+                    .tag-postal {
+                        color: #faf0e5;
+                    }
+
+                    &:hover,
+                    &:focus-visible {
+                        background-color: #1e4b34;
+                        border-color: #1e4b34;
+                    }
+                }
+
+                &.active {
+                    background-color: #e07a3c;
+                    border-color: #e07a3c;
+                    box-shadow: 0 0.4rem 0.8rem rgba(224, 122, 60, 0.45);
+
+                    .tag-name {
+                        color: #ffffff;
+                    }
+
+                    .tag-postal {
+                        color: #faf0e5;
+                    }
+
+                    &:hover,
+                    &:focus-visible {
+                        background-color: #c96828;
+                        border-color: #c96828;
+                    }
+                }
+            }
+        }
+
+        .area-note {
+            margin: 0 1rem;
+            font-size: 0.9rem;
+            color: #000000;
+            text-align: center;
+            font-family: "Montserrat", sans-serif;
+            max-width: 600px;
+        }
+    }
+}
+
+.area-marker {
+    background: transparent !important;
+    border: none !important;
+}
+
+.leaflet-popup-content-wrapper {
+    border-radius: 12px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.leaflet-popup-content {
+    margin: 0.7rem 0.9rem;
+    font-size: 0.9rem;
+    line-height: 1.4;
+
+    strong {
+        font-family: "Lato", sans-serif;
+        color: #265e42;
+        font-size: 1rem;
+    }
+
+    em {
+        color: #777;
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .area-served {
+        .area-container {
+            .area-map-wrapper {
+                .area-map {
+                    height: 440px;
+                }
+            }
+
+            .area-cities {
+                gap: 0.75rem;
+
+                .city-tag {
+                    font-size: 1rem;
+                    padding: 0.5rem 1.1rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .area-served {
+        .area-container {
+            width: 70%;
+            max-width: none;
+
+            .area-title {
+                font-size: 2.5rem;
+            }
+
+            .area-description {
+                font-size: 1.3rem;
+                width: 80%;
+                margin: 1rem auto 2rem auto;
+            }
+
+            .area-map-wrapper {
+                max-width: 1100px;
+
+                .area-map {
+                    height: 520px;
+                }
+            }
+
+            .area-cities {
+                .city-tag {
+                    font-size: 1.05rem;
+                }
+            }
+
+            .area-note {
+                font-size: 1.05rem;
+                max-width: 800px;
+            }
+        }
+    }
+}
