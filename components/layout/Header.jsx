@@ -75,7 +75,7 @@ export default function Header() {
                         className={`flex flex-1 items-center justify-center gap-[30px] max-[860px]:fixed max-[860px]:inset-x-0 max-[860px]:top-[108px] max-[860px]:flex-col max-[860px]:gap-0 max-[860px]:bg-cream max-[860px]:py-2 max-[860px]:shadow-[0_18px_30px_-20px_rgba(35,97,63,0.5)] max-[860px]:transition-transform ${
                             menuOpen
                                 ? "max-[860px]:translate-y-0"
-                                : "max-[860px]:-translate-y-[130%]"
+                                : "max-[860px]:translate-y-[calc(-100%_-_160px)]"
                         }`}
                     >
                         {NAV_LINKS.map((link) => (
