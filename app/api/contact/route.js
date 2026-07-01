@@ -1,5 +1,9 @@
 import nodemailer from "nodemailer";
 import { z } from "zod";
+import {
+    renderContactEmailHtml,
+    renderContactEmailText,
+} from "@/lib/contactEmail";
 
 const RATE_LIMIT_WINDOW_MS = 60_000;
 const RATE_LIMIT_MAX_REQUESTS = 3;
@@ -85,15 +89,6 @@ function buildTransport() {
     });
 }
 
-function escapeHtml(value) {
-    return String(value)
-        .replace(/&/g, "&amp;")
-        .replace(/</g, "&lt;")
-        .replace(/>/g, "&gt;")
-        .replace(/"/g, "&quot;")
-        .replace(/'/g, "&#39;");
-}
-
 export async function POST(request) {
     const ip = getClientIp(request);
     if (!checkRateLimit(ip)) {
@@ -150,17 +145,8 @@ export async function POST(request) {
             to,
             replyTo: `"${fullName}" <${email}>`,
             subject: `Nouveau message de ${fullName}`,
-            text: `Prénom : ${firstname}
-Nom : ${lastname}
-Email : ${email}
-
-Message :
-${message}`,
-            html: `<p><strong>Prénom :</strong> ${escapeHtml(firstname)}</p>
-<p><strong>Nom :</strong> ${escapeHtml(lastname)}</p>
-<p><strong>Email :</strong> ${escapeHtml(email)}</p>
-<p><strong>Message :</strong></p>
-<p>${escapeHtml(message).replace(/\n/g, "<br>")}</p>`,
+            text: renderContactEmailText({ firstname, lastname, email, message }),
+            html: renderContactEmailHtml({ firstname, lastname, email, message }),
         });
 
         return Response.json({ ok: true });
