@@ -52,9 +52,9 @@ export default function Header() {
             </div>
 
             <nav
-                className={`sticky top-0 z-50 border-b border-green/10 bg-cream/85 backdrop-blur-md transition-shadow ${
-                    scrolled ? "shadow-[0_8px_24px_-18px_rgba(35,97,63,0.6)]" : ""
-                }`}
+                className={`sticky top-0 z-50 border-b border-green/10 backdrop-blur-md transition-shadow ${
+                    menuOpen ? "bg-cream" : "bg-cream/85"
+                } ${scrolled ? "shadow-[0_8px_24px_-18px_rgba(35,97,63,0.6)]" : ""}`}
             >
                 <div className="mx-auto flex h-[70px] max-w-[1180px] items-center justify-between px-7">
                     <Link href="/" className="flex items-center gap-3">
@@ -72,7 +72,7 @@ export default function Header() {
                     </Link>
 
                     <ul
-                        className={`flex flex-1 items-center justify-center gap-[30px] max-[860px]:fixed max-[860px]:inset-x-0 max-[860px]:top-[108px] max-[860px]:flex-col max-[860px]:gap-0 max-[860px]:bg-cream max-[860px]:py-2 max-[860px]:shadow-[0_18px_30px_-20px_rgba(35,97,63,0.5)] max-[860px]:transition-transform ${
+                        className={`flex flex-1 items-center justify-center gap-[30px] max-[860px]:absolute max-[860px]:inset-x-0 max-[860px]:top-full max-[860px]:flex-col max-[860px]:gap-0 max-[860px]:bg-cream max-[860px]:py-2 max-[860px]:shadow-[0_18px_30px_-20px_rgba(35,97,63,0.5)] max-[860px]:transition-transform ${
                             menuOpen
                                 ? "max-[860px]:translate-y-0"
                                 : "max-[860px]:translate-y-[calc(-100%_-_160px)]"
