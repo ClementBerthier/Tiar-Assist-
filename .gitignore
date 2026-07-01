@@ -26,3 +26,16 @@ dist-ssr
 .env
 
 claude
+
+# Audit reports — contain sensitive information, never commit
+audit
+
+# next.js
+.next/
+next-env.d.ts
+
+# scratch prototypes (design iterations)
+proto/
+
+# working references (client screenshots, source assets — not for the repo)
+reference/

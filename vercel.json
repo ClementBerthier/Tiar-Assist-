@@ -7,6 +7,5 @@
             "destination": "https://www.tiareassist.fr/:path*",
             "permanent": true
         }
-    ],
-    "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+    ]
 }

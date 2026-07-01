@@ -1,7 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /ML
-Disallow: /CGU
-Disallow: /CGV
-Disallow: /PrivacyPolicy
+
 Sitemap: https://www.tiareassist.fr/sitemap.xml
