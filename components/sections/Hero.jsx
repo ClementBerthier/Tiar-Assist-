@@ -31,7 +31,7 @@ export default function Hero() {
             />
 
             <div className="mx-auto max-w-[1180px] px-7">
-                <div className="relative flex flex-col items-center py-[58px] pb-[92px] text-center max-[600px]:py-[42px] max-[600px]:pb-16">
+                <div className="relative flex flex-col items-center py-[58px] pb-[92px] text-center [text-shadow:0_0_4px_#fff,0_0_8px_#fff,0_0_12px_rgba(255,255,255,0.95),0_0_22px_rgba(255,255,255,0.9),0_0_32px_rgba(255,255,255,0.8)] max-[600px]:py-[42px] max-[600px]:pb-16">
                     <span className="reveal mb-6 flex h-[118px] w-[145px] items-start justify-center overflow-hidden">
                         {/* eslint-disable-next-line @next/next/no-img-element */}
                         <img
@@ -67,7 +67,7 @@ export default function Hero() {
                         activité.
                     </p>
 
-                    <div className="reveal d3 flex flex-wrap justify-center gap-3.5">
+                    <div className="reveal d3 flex flex-wrap justify-center gap-3.5 text-shadow-none">
                         <Link href="/#contact" className="btn btn-primary">
                             Demander un devis gratuit
                         </Link>
